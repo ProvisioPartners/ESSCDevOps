@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Touch_Type__c</fullName>
+    <description>Reports &quot;Email / Activity&quot; when the most recent touch came from a synced Task/Event rather than a logged Interaction. Otherwise mirrors Last Interaction Type.</description>
+    <externalId>false</externalId>
+    <formula>IF(
+    AND(
+        NOT(ISBLANK(LastActivityDate)),
+        OR(
+            ISBLANK(Last_Interaction_Date__c),
+            LastActivityDate &gt; Last_Interaction_Date__c
+        )
+    ),
+    &quot;Email / Activity&quot;,
+    TEXT(Last_Interaction_Type__c)
+)</formula>
+    <inlineHelpText>How the most recent contact happened. &quot;Email / Activity&quot; means it came from a synced activity, not a logged Interaction.</inlineHelpText>
+    <label>Last Touch Type</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

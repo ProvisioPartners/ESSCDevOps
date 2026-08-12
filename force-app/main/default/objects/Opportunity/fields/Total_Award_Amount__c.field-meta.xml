@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Award_Amount__c</fullName>
+    <description>The full amount awarded by the funder on this Government Grant, across the entire period of performance. Held against Total Award Paid (what has been reimbursed so far) to show the unbilled balance. This is the award as written in the notice of award, not a forecast - it changes only when the funder amends the award.</description>
+    <inlineHelpText>Total awarded across the whole grant period, as stated in the notice of award. Update only when the funder amends the award.</inlineHelpText>
+    <label>Total Award Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Currency</type>
+</CustomField>

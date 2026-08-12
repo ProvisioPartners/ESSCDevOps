@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ask_Amount__c</fullName>
+    <description>The amount solicited from the donor on this Donation Request. Held against Amount (what the donor committed) and Received Amount (what actually landed as Gift Transactions) to measure ask-to-close performance.</description>
+    <inlineHelpText>What we asked the donor for. Leave blank until the ask has actually been made.</inlineHelpText>
+    <label>Ask Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Currency</type>
+</CustomField>

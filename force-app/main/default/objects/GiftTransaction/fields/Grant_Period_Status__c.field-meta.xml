@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grant_Period_Status__c</fullName>
+    <description>Where this reimbursement period stands with the funder. Requested - claim submitted, nothing received. Received - paid in full, and the only status the Total Award Paid roll-up counts. Partial - the funder paid less than claimed and the shortfall is still open; it is an interim marker, and the period should be split into a Received row for the settled amount and a Requested row for the balance so the roll-up stays honest. Separate from the OOTB Status field, which tracks the gift transaction itself rather than the reimbursement claim.</description>
+    <inlineHelpText>Requested until the funder pays. Received means paid in full and counts toward Total Award Paid. Partial is temporary - split the period into a Received row and a Requested row for the balance.</inlineHelpText>
+    <label>Grant Period Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Requested</fullName>
+                <default>false</default>
+                <label>Requested</label>
+            </value>
+            <value>
+                <fullName>Received</fullName>
+                <default>false</default>
+                <label>Received</label>
+            </value>
+            <value>
+                <fullName>Partial</fullName>
+                <default>false</default>
+                <label>Partial</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

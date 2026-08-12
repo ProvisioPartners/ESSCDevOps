@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Visible_to_All_Users__c</fullName>
+    <defaultValue>true</defaultValue>
+    <description>Author intent flag, checked by default so cross-team visibility is the norm. Unchecking it does NOT hide anything - Task does not support Dynamic Forms, so there is no conditional field visibility available. It records that the author considered the activity sensitive, and makes that reportable. Actual concealment is achieved by putting the sensitive text in GR_Confidential_Notes__c, which is restricted by Field-Level Security.</description>
+    <inlineHelpText>Leave checked so all ESSC teams can read the Comments. Unchecking flags this interaction as sensitive for reporting, but does not hide it - to keep notes GR-only, put them in GR Confidential Notes instead.</inlineHelpText>
+    <label>Visible to All Users</label>
+    <type>Checkbox</type>
+</CustomField>

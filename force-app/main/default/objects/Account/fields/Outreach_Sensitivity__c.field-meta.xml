@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Outreach_Sensitivity__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Set by GR staff on a Legislator Account where outreach needs coordinating. When checked, any Task or Event logged against the Account by a team other than GR notifies the GR_Team public group. Does not restrict logging - it is a notify-on-touch flag, not a lock.</description>
+    <inlineHelpText>Check this if GR needs to know whenever another team logs an interaction with this legislator. Other teams can still log activity as normal.</inlineHelpText>
+    <label>Outreach Sensitivity</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

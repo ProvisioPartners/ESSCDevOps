@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Donation_Date__c</fullName>
+    <description>The date the donation is expected or was made, as distinct from Close Date, which tracks the pipeline decision point. Seeds EffectiveStartDate on the Gift Commitment created from this record.</description>
+    <inlineHelpText>When the gift is expected to be made. Close Date tracks when the ask is decided; this tracks when the money moves.</inlineHelpText>
+    <label>Donation Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

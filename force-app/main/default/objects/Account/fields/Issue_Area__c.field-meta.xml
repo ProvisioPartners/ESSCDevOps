@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Issue_Area__c</fullName>
+    <inlineHelpText>Legislative issue areas this legislator is active on. Mirrors the Issue Area global value set used by Committee - keep the two lists in sync when values change.</inlineHelpText>
+    <label>Issue Area</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aging_And_Long_Term_Care</fullName>
+                <default>false</default>
+                <label>Aging And Long-Term Care</label>
+            </value>
+            <value>
+                <fullName>Agriculture</fullName>
+                <default>false</default>
+                <label>Agriculture</label>
+            </value>
+            <value>
+                <fullName>Appropriations</fullName>
+                <default>false</default>
+                <label>Appropriations</label>
+            </value>
+            <value>
+                <fullName>Arts_Entertainment_Sports_And_Tourism</fullName>
+                <default>false</default>
+                <label>Arts, Entertainment, Sports, And Tourism</label>
+            </value>
+            <value>
+                <fullName>Banking_And_Finance</fullName>
+                <default>false</default>
+                <label>Banking And Finance</label>
+            </value>
+            <value>
+                <fullName>Budget</fullName>
+                <default>false</default>
+                <label>Budget</label>
+            </value>
+            <value>
+                <fullName>Business_And_Professions</fullName>
+                <default>false</default>
+                <label>Business And Professions</label>
+            </value>
+            <value>
+                <fullName>Communications_And_Conveyance</fullName>
+                <default>false</default>
+                <label>Communications And Conveyance</label>
+            </value>
+            <value>
+                <fullName>Economic_Development_Growth_And_Household_Impact</fullName>
+                <default>false</default>
+                <label>Economic Development, Growth, And Household Impact</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>Elections</fullName>
+                <default>false</default>
+                <label>Elections</label>
+            </value>
+            <value>
+                <fullName>Emergency_Management</fullName>
+                <default>false</default>
+                <label>Emergency Management</label>
+            </value>
+            <value>
+                <fullName>Environmental_Safety_And_Toxic_Materials</fullName>
+                <default>false</default>
+                <label>Environmental Safety And Toxic Materials</label>
+            </value>
+            <value>
+                <fullName>Governmental_Organization</fullName>
+                <default>false</default>
+                <label>Governmental Organization</label>
+            </value>
+            <value>
+                <fullName>Health</fullName>
+                <default>false</default>
+                <label>Health</label>
+            </value>
+            <value>
+                <fullName>Higher_Education</fullName>
+                <default>false</default>
+                <label>Higher Education</label>
+            </value>
+            <value>
+                <fullName>Housing_And_Community_Development</fullName>
+                <default>false</default>
+                <label>Housing And Community Development</label>
+            </value>
+            <value>
+                <fullName>Human_Services</fullName>
+                <default>false</default>
+                <label>Human Services</label>
+            </value>
+            <value>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+                <label>Insurance</label>
+            </value>
+            <value>
+                <fullName>Joint_Legislative_Audit_Committee</fullName>
+                <default>false</default>
+                <label>Joint Legislative Audit Committee</label>
+            </value>
+            <value>
+                <fullName>Judiciary</fullName>
+                <default>false</default>
+                <label>Judiciary</label>
+            </value>
+            <value>
+                <fullName>Labor_And_Employment</fullName>
+                <default>false</default>
+                <label>Labor And Employment</label>
+            </value>
+            <value>
+                <fullName>Local_Government</fullName>
+                <default>false</default>
+                <label>Local Government</label>
+            </value>
+            <value>
+                <fullName>Military_And_Veterans_Affairs</fullName>
+                <default>false</default>
+                <label>Military And Veterans Affairs</label>
+            </value>
+            <value>
+                <fullName>Natural_Resources</fullName>
+                <default>false</default>
+                <label>Natural Resources</label>
+            </value>
+            <value>
+                <fullName>Privacy_And_Consumer_Protection</fullName>
+                <default>false</default>
+                <label>Privacy And Consumer Protection</label>
+            </value>
+            <value>
+                <fullName>Public_Employment_And_Retirement</fullName>
+                <default>false</default>
+                <label>Public Employment And Retirement</label>
+            </value>
+            <value>
+                <fullName>Public_Safety</fullName>
+                <default>false</default>
+                <label>Public Safety</label>
+            </value>
+            <value>
+                <fullName>Revenue_And_Taxation</fullName>
+                <default>false</default>
+                <label>Revenue And Taxation</label>
+            </value>
+            <value>
+                <fullName>Transportation</fullName>
+                <default>false</default>
+                <label>Transportation</label>
+            </value>
+            <value>
+                <fullName>Utilities_And_Energy</fullName>
+                <default>false</default>
+                <label>Utilities And Energy</label>
+            </value>
+            <value>
+                <fullName>Water_Parks_And_Wildlife</fullName>
+                <default>false</default>
+                <label>Water, Parks, And Wildlife</label>
+            </value>
+            <value>
+                <fullName>TBD</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TBD</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

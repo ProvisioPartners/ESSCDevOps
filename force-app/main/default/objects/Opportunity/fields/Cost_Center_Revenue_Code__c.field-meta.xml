@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cost_Center_Revenue_Code__c</fullName>
+    <description>The finance coding this grant&apos;s revenue posts against, as it appears in the accounting system. Free text because the coding scheme lives outside Salesforce and changes without notice. Mirrors the Cost Center / Revenue Code pair carried on Gift Designation - see docs/gift-designation-financial-attribution.md - but is captured here so the coding is known at award time, before any reimbursement is designated.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Finance coding this grant posts against, exactly as the accounting system spells it. Confirm with Finance before entering.</inlineHelpText>
+    <label>Cost Center/Revenue Code</label>
+    <length>50</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

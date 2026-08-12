@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Aging_And_Long_Term_Care</fullName>
+        <default>false</default>
+        <label>Aging And Long-Term Care</label>
+    </customValue>
+    <customValue>
+        <fullName>Agriculture</fullName>
+        <default>false</default>
+        <label>Agriculture</label>
+    </customValue>
+    <customValue>
+        <fullName>Appropriations</fullName>
+        <default>false</default>
+        <label>Appropriations</label>
+    </customValue>
+    <customValue>
+        <fullName>Arts_Entertainment_Sports_And_Tourism</fullName>
+        <default>false</default>
+        <label>Arts, Entertainment, Sports, And Tourism</label>
+    </customValue>
+    <customValue>
+        <fullName>Banking_And_Finance</fullName>
+        <default>false</default>
+        <label>Banking And Finance</label>
+    </customValue>
+    <customValue>
+        <fullName>Budget</fullName>
+        <default>false</default>
+        <label>Budget</label>
+    </customValue>
+    <customValue>
+        <fullName>Business_And_Professions</fullName>
+        <default>false</default>
+        <label>Business And Professions</label>
+    </customValue>
+    <customValue>
+        <fullName>Communications_And_Conveyance</fullName>
+        <default>false</default>
+        <label>Communications And Conveyance</label>
+    </customValue>
+    <customValue>
+        <fullName>Economic_Development_Growth_And_Household_Impact</fullName>
+        <default>false</default>
+        <label>Economic Development, Growth, And Household Impact</label>
+    </customValue>
+    <customValue>
+        <fullName>Education</fullName>
+        <default>false</default>
+        <label>Education</label>
+    </customValue>
+    <customValue>
+        <fullName>Elections</fullName>
+        <default>false</default>
+        <label>Elections</label>
+    </customValue>
+    <customValue>
+        <fullName>Emergency_Management</fullName>
+        <default>false</default>
+        <label>Emergency Management</label>
+    </customValue>
+    <customValue>
+        <fullName>Environmental_Safety_And_Toxic_Materials</fullName>
+        <default>false</default>
+        <label>Environmental Safety And Toxic Materials</label>
+    </customValue>
+    <customValue>
+        <fullName>Governmental_Organization</fullName>
+        <default>false</default>
+        <label>Governmental Organization</label>
+    </customValue>
+    <customValue>
+        <fullName>Health</fullName>
+        <default>false</default>
+        <label>Health</label>
+    </customValue>
+    <customValue>
+        <fullName>Higher_Education</fullName>
+        <default>false</default>
+        <label>Higher Education</label>
+    </customValue>
+    <customValue>
+        <fullName>Housing_And_Community_Development</fullName>
+        <default>false</default>
+        <label>Housing And Community Development</label>
+    </customValue>
+    <customValue>
+        <fullName>Human_Services</fullName>
+        <default>false</default>
+        <label>Human Services</label>
+    </customValue>
+    <customValue>
+        <fullName>Insurance</fullName>
+        <default>false</default>
+        <label>Insurance</label>
+    </customValue>
+    <customValue>
+        <fullName>Joint_Legislative_Audit_Committee</fullName>
+        <default>false</default>
+        <label>Joint Legislative Audit Committee</label>
+    </customValue>
+    <customValue>
+        <fullName>Judiciary</fullName>
+        <default>false</default>
+        <label>Judiciary</label>
+    </customValue>
+    <customValue>
+        <fullName>Labor_And_Employment</fullName>
+        <default>false</default>
+        <label>Labor And Employment</label>
+    </customValue>
+    <customValue>
+        <fullName>Local_Government</fullName>
+        <default>false</default>
+        <label>Local Government</label>
+    </customValue>
+    <customValue>
+        <fullName>Military_And_Veterans_Affairs</fullName>
+        <default>false</default>
+        <label>Military And Veterans Affairs</label>
+    </customValue>
+    <customValue>
+        <fullName>Natural_Resources</fullName>
+        <default>false</default>
+        <label>Natural Resources</label>
+    </customValue>
+    <customValue>
+        <fullName>Privacy_And_Consumer_Protection</fullName>
+        <default>false</default>
+        <label>Privacy And Consumer Protection</label>
+    </customValue>
+    <customValue>
+        <fullName>Public_Employment_And_Retirement</fullName>
+        <default>false</default>
+        <label>Public Employment And Retirement</label>
+    </customValue>
+    <customValue>
+        <fullName>Public_Safety</fullName>
+        <default>false</default>
+        <label>Public Safety</label>
+    </customValue>
+    <customValue>
+        <fullName>Revenue_And_Taxation</fullName>
+        <default>false</default>
+        <label>Revenue And Taxation</label>
+    </customValue>
+    <customValue>
+        <fullName>Transportation</fullName>
+        <default>false</default>
+        <label>Transportation</label>
+    </customValue>
+    <customValue>
+        <fullName>Utilities_And_Energy</fullName>
+        <default>false</default>
+        <label>Utilities And Energy</label>
+    </customValue>
+    <customValue>
+        <fullName>Water_Parks_And_Wildlife</fullName>
+        <default>false</default>
+        <label>Water, Parks, And Wildlife</label>
+    </customValue>
+    <customValue>
+        <fullName>TBD</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>TBD</label>
+    </customValue>
+    <description>Shared issue area list used by Account (Legislator record type) and Committee. Mirrors the California legislative standing committee list.</description>
+    <masterLabel>Issue Area</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

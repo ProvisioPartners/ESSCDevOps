@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GR_Confidential_Notes__c</fullName>
+    <description>GR-only meeting notes. Field-Level Security is granted solely by Gov_Relations_Custom_Object_Field_Access, so this field is invisible to every other team in the UI, in reports, in list views, in the API and in exports. Sensitive content belongs here; the standard Comments field remains the cross-team summary. Defined on Activity so it exists on Task and Event, but it is only placed on the Task layout.</description>
+    <inlineHelpText>GR staff only. Nobody outside Government Relations can see this field anywhere - including reports and exports. Put the cross-team summary in Comments and anything sensitive here.</inlineHelpText>
+    <label>GR Confidential Notes</label>
+    <required>false</required>
+    <type>TextArea</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Award_Paid__c</fullName>
+    <description>Sum of Grant Period Amount across every Gift Transaction under this grant&apos;s Gift Commitment whose Grant Period Status is Received. Maintained by the Roll Up Government Grant Award Paid flow - it cannot be a native roll-up summary because Gift Transactions are children of the Gift Commitment, not of the Opportunity. Do not edit by hand; the next transaction save overwrites it.</description>
+    <inlineHelpText>Reimbursements received to date, totalled from the Gift Transactions under this grant&apos;s Gift Commitment. Calculated - do not edit.</inlineHelpText>
+    <label>Total Award Paid</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

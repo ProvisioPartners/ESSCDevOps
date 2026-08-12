@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Touch_Date__c</fullName>
+    <description>Most recent of Last Interaction Date (logged Interactions) and LastActivityDate (completed Tasks/past Events, including synced Outlook email).</description>
+    <formula>IF(
+    ISBLANK(Last_Interaction_Date__c),
+    LastActivityDate,
+    IF(
+        ISBLANK(LastActivityDate),
+        Last_Interaction_Date__c,
+        IF(
+            LastActivityDate &gt; Last_Interaction_Date__c,
+            LastActivityDate,
+            Last_Interaction_Date__c
+        )
+    )
+)</formula>
+    <inlineHelpText>The most recent contact of any kind - logged Interaction or synced activity.</inlineHelpText>
+    <label>Last Touch Date</label>
+    <required>false</required>
+    <type>Date</type>
+</CustomField>
