@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Logging_Team__c</fullName>
+    <description>The ESSC team that logged this activity. Defined on Activity, so it is shared by both Task and Event - Salesforce does not allow a custom field on Task or Event alone.</description>
+    <inlineHelpText>Which ESSC team logged this interaction. Set this so other teams can tell at a glance who owns the touchpoint.</inlineHelpText>
+    <label>Logging Team</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>GR</fullName>
+                <default>false</default>
+                <label>GR</label>
+            </value>
+            <value>
+                <fullName>Development</fullName>
+                <default>false</default>
+                <label>Development</label>
+            </value>
+            <value>
+                <fullName>MarCom</fullName>
+                <default>false</default>
+                <label>MarCom</label>
+            </value>
+            <value>
+                <fullName>Grants</fullName>
+                <default>false</default>
+                <label>Grants</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

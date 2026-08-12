@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grant_Start_Date__c</fullName>
+    <description>First day of the grant&apos;s period of performance. Distinct from CloseDate, which is when the award decision lands. Drives Grant Length and seeds EffectiveStartDate on the Gift Commitment.</description>
+    <inlineHelpText>First day of the period of performance, from the notice of award. Not the date the award was decided - that is Close Date.</inlineHelpText>
+    <label>Grant Start Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

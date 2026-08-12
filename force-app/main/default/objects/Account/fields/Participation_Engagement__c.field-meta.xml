@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Participation_Engagement__c</fullName>
+    <label>Participation &amp; Engagement</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Consulting Relationship</fullName>
+                <default>false</default>
+                <label>Consulting Relationship</label>
+            </value>
+            <value>
+                <fullName>CVS Summer Campaign</fullName>
+                <default>false</default>
+                <label>CVS Summer Campaign</label>
+            </value>
+            <value>
+                <fullName>Disability Film Challenge</fullName>
+                <default>false</default>
+                <label>Disability Film Challenge</label>
+            </value>
+            <value>
+                <fullName>Engaged Partner</fullName>
+                <default>false</default>
+                <label>Engaged Partner</label>
+            </value>
+            <value>
+                <fullName>Entertainment</fullName>
+                <default>false</default>
+                <label>Entertainment</label>
+            </value>
+            <value>
+                <fullName>ESSC Angels Night</fullName>
+                <default>false</default>
+                <label>ESSC Angels Night</label>
+            </value>
+            <value>
+                <fullName>ESSC Vendor Partner</fullName>
+                <default>false</default>
+                <label>ESSC Vendor Partner</label>
+            </value>
+            <value>
+                <fullName>Giving Tuesday</fullName>
+                <default>false</default>
+                <label>Giving Tuesday</label>
+            </value>
+            <value>
+                <fullName>Grants</fullName>
+                <default>false</default>
+                <label>Grants</label>
+            </value>
+            <value>
+                <fullName>In-Kind Donor</fullName>
+                <default>false</default>
+                <label>In-Kind Donor</label>
+            </value>
+            <value>
+                <fullName>Month of Love</fullName>
+                <default>false</default>
+                <label>Month of Love</label>
+            </value>
+            <value>
+                <fullName>Past Prospect</fullName>
+                <default>false</default>
+                <label>Past Prospect</label>
+            </value>
+            <value>
+                <fullName>Prospects</fullName>
+                <default>false</default>
+                <label>Prospects</label>
+            </value>
+            <value>
+                <fullName>Rex for Good @ Brea Seniors</fullName>
+                <default>false</default>
+                <label>Rex for Good @ Brea Seniors</label>
+            </value>
+            <value>
+                <fullName>RSP Golf</fullName>
+                <default>false</default>
+                <label>RSP Golf</label>
+            </value>
+            <value>
+                <fullName>Strides for Disability</fullName>
+                <default>false</default>
+                <label>Strides for Disability</label>
+            </value>
+            <value>
+                <fullName>Volunteer</fullName>
+                <default>false</default>
+                <label>Volunteer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

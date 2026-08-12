@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Service_Line__c</fullName>
+    <label>Service Line</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Adult Day Services - N</fullName>
+                <default>false</default>
+                <label>Adult Day Services - N</label>
+            </value>
+            <value>
+                <fullName>Adult Day Services - S</fullName>
+                <default>false</default>
+                <label>Adult Day Services - S</label>
+            </value>
+            <value>
+                <fullName>Adult Day Services &amp; Transportation</fullName>
+                <default>false</default>
+                <label>Adult Day Services &amp; Transportation</label>
+            </value>
+            <value>
+                <fullName>Adult Day Services - S &amp; Camp Oakes</fullName>
+                <default>false</default>
+                <label>Adult Day Services - S &amp; Camp Oakes</label>
+            </value>
+            <value>
+                <fullName>Autism Services</fullName>
+                <default>false</default>
+                <label>Autism Services</label>
+            </value>
+            <value>
+                <fullName>Autism Services &amp; Child Dev. Services</fullName>
+                <default>false</default>
+                <label>Autism Services &amp; Child Dev. Services</label>
+            </value>
+            <value>
+                <fullName>Autism Services/LO/MarCom</fullName>
+                <default>false</default>
+                <label>Autism Services/LO/MarCom</label>
+            </value>
+            <value>
+                <fullName>Camp</fullName>
+                <default>false</default>
+                <label>Camp</label>
+            </value>
+            <value>
+                <fullName>Child Dev. Services</fullName>
+                <default>false</default>
+                <label>Child Dev. Services</label>
+            </value>
+            <value>
+                <fullName>Headquarters &amp; Autism Services</fullName>
+                <default>false</default>
+                <label>Headquarters &amp; Autism Services</label>
+            </value>
+            <value>
+                <fullName>Living Options</fullName>
+                <default>false</default>
+                <label>Living Options</label>
+            </value>
+            <value>
+                <fullName>Senior Services</fullName>
+                <default>false</default>
+                <label>Senior Services</label>
+            </value>
+            <value>
+                <fullName>WorkFirst / Camp</fullName>
+                <default>false</default>
+                <label>WorkFirst / Camp</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

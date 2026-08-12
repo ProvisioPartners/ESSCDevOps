@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cities__c</fullName>
+    <label>Cities</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Alhambra</fullName>
+                <default>false</default>
+                <label>Alhambra</label>
+            </value>
+            <value>
+                <fullName>Altadena</fullName>
+                <default>false</default>
+                <label>Altadena</label>
+            </value>
+            <value>
+                <fullName>Anaheim</fullName>
+                <default>false</default>
+                <label>Anaheim</label>
+            </value>
+            <value>
+                <fullName>Artesia</fullName>
+                <default>false</default>
+                <label>Artesia</label>
+            </value>
+            <value>
+                <fullName>Bakersfield</fullName>
+                <default>false</default>
+                <label>Bakersfield</label>
+            </value>
+            <value>
+                <fullName>Barstow</fullName>
+                <default>false</default>
+                <label>Barstow</label>
+            </value>
+            <value>
+                <fullName>Bellflower</fullName>
+                <default>false</default>
+                <label>Bellflower</label>
+            </value>
+            <value>
+                <fullName>Beverly Hills</fullName>
+                <default>false</default>
+                <label>Beverly Hills</label>
+            </value>
+            <value>
+                <fullName>Brentwood</fullName>
+                <default>false</default>
+                <label>Brentwood</label>
+            </value>
+            <value>
+                <fullName>Buena Park</fullName>
+                <default>false</default>
+                <label>Buena Park</label>
+            </value>
+            <value>
+                <fullName>Burbank</fullName>
+                <default>false</default>
+                <label>Burbank</label>
+            </value>
+            <value>
+                <fullName>Calexico</fullName>
+                <default>false</default>
+                <label>Calexico</label>
+            </value>
+            <value>
+                <fullName>Camarillo</fullName>
+                <default>false</default>
+                <label>Camarillo</label>
+            </value>
+            <value>
+                <fullName>Canoga Park</fullName>
+                <default>false</default>
+                <label>Canoga Park</label>
+            </value>
+            <value>
+                <fullName>Carlsbad</fullName>
+                <default>false</default>
+                <label>Carlsbad</label>
+            </value>
+            <value>
+                <fullName>Carson</fullName>
+                <default>false</default>
+                <label>Carson</label>
+            </value>
+            <value>
+                <fullName>Cathedral City</fullName>
+                <default>false</default>
+                <label>Cathedral City</label>
+            </value>
+            <value>
+                <fullName>Cerritos</fullName>
+                <default>false</default>
+                <label>Cerritos</label>
+            </value>
+            <value>
+                <fullName>Chino</fullName>
+                <default>false</default>
+                <label>Chino</label>
+            </value>
+            <value>
+                <fullName>Chino Hills</fullName>
+                <default>false</default>
+                <label>Chino Hills</label>
+            </value>
+            <value>
+                <fullName>Chula Vista</fullName>
+                <default>false</default>
+                <label>Chula Vista</label>
+            </value>
+            <value>
+                <fullName>Claremont</fullName>
+                <default>false</default>
+                <label>Claremont</label>
+            </value>
+            <value>
+                <fullName>Coachella</fullName>
+                <default>false</default>
+                <label>Coachella</label>
+            </value>
+            <value>
+                <fullName>Colton</fullName>
+                <default>false</default>
+                <label>Colton</label>
+            </value>
+            <value>
+                <fullName>Compton</fullName>
+                <default>false</default>
+                <label>Compton</label>
+            </value>
+            <value>
+                <fullName>Corona</fullName>
+                <default>false</default>
+                <label>Corona</label>
+            </value>
+            <value>
+                <fullName>Costa Mesa</fullName>
+                <default>false</default>
+                <label>Costa Mesa</label>
+            </value>
+            <value>
+                <fullName>Covina</fullName>
+                <default>false</default>
+                <label>Covina</label>
+            </value>
+            <value>
+                <fullName>Culver City</fullName>
+                <default>false</default>
+                <label>Culver City</label>
+            </value>
+            <value>
+                <fullName>Dana Point</fullName>
+                <default>false</default>
+                <label>Dana Point</label>
+            </value>
+            <value>
+                <fullName>Downey</fullName>
+                <default>false</default>
+                <label>Downey</label>
+            </value>
+            <value>
+                <fullName>East Los Angeles</fullName>
+                <default>false</default>
+                <label>East Los Angeles</label>
+            </value>
+            <value>
+                <fullName>El Cajon</fullName>
+                <default>false</default>
+                <label>El Cajon</label>
+            </value>
+            <value>
+                <fullName>El Centro</fullName>
+                <default>false</default>
+                <label>El Centro</label>
+            </value>
+            <value>
+                <fullName>El Segundo</fullName>
+                <default>false</default>
+                <label>El Segundo</label>
+            </value>
+            <value>
+                <fullName>El Monte</fullName>
+                <default>false</default>
+                <label>El Monte</label>
+            </value>
+            <value>
+                <fullName>Encinitas</fullName>
+                <default>false</default>
+                <label>Encinitas</label>
+            </value>
+            <value>
+                <fullName>Escondido</fullName>
+                <default>false</default>
+                <label>Escondido</label>
+            </value>
+            <value>
+                <fullName>Fontana</fullName>
+                <default>false</default>
+                <label>Fontana</label>
+            </value>
+            <value>
+                <fullName>Fullerton</fullName>
+                <default>false</default>
+                <label>Fullerton</label>
+            </value>
+            <value>
+                <fullName>Garden Grove</fullName>
+                <default>false</default>
+                <label>Garden Grove</label>
+            </value>
+            <value>
+                <fullName>Gardena</fullName>
+                <default>false</default>
+                <label>Gardena</label>
+            </value>
+            <value>
+                <fullName>Glendale</fullName>
+                <default>false</default>
+                <label>Glendale</label>
+            </value>
+            <value>
+                <fullName>Glendora</fullName>
+                <default>false</default>
+                <label>Glendora</label>
+            </value>
+            <value>
+                <fullName>Hawthorne</fullName>
+                <default>false</default>
+                <label>Hawthorne</label>
+            </value>
+            <value>
+                <fullName>Hemet</fullName>
+                <default>false</default>
+                <label>Hemet</label>
+            </value>
+            <value>
+                <fullName>Hesperia</fullName>
+                <default>false</default>
+                <label>Hesperia</label>
+            </value>
+            <value>
+                <fullName>Huntington Beach</fullName>
+                <default>false</default>
+                <label>Huntington Beach</label>
+            </value>
+            <value>
+                <fullName>Huntington Park</fullName>
+                <default>false</default>
+                <label>Huntington Park</label>
+            </value>
+            <value>
+                <fullName>Inglewood</fullName>
+                <default>false</default>
+                <label>Inglewood</label>
+            </value>
+            <value>
+                <fullName>Irvine</fullName>
+                <default>false</default>
+                <label>Irvine</label>
+            </value>
+            <value>
+                <fullName>Jurupa Valley</fullName>
+                <default>false</default>
+                <label>Jurupa Valley</label>
+            </value>
+            <value>
+                <fullName>Koreatown</fullName>
+                <default>false</default>
+                <label>Koreatown</label>
+            </value>
+            <value>
+                <fullName>La Habra</fullName>
+                <default>false</default>
+                <label>La Habra</label>
+            </value>
+            <value>
+                <fullName>La Jolla</fullName>
+                <default>false</default>
+                <label>La Jolla</label>
+            </value>
+            <value>
+                <fullName>La Mesa</fullName>
+                <default>false</default>
+                <label>La Mesa</label>
+            </value>
+            <value>
+                <fullName>La Puente</fullName>
+                <default>false</default>
+                <label>La Puente</label>
+            </value>
+            <value>
+                <fullName>Ladera</fullName>
+                <default>false</default>
+                <label>Ladera</label>
+            </value>
+            <value>
+                <fullName>Ladera Heights</fullName>
+                <default>false</default>
+                <label>Ladera Heights</label>
+            </value>
+            <value>
+                <fullName>Lake Elsinore</fullName>
+                <default>false</default>
+                <label>Lake Elsinore</label>
+            </value>
+            <value>
+                <fullName>Lancaster</fullName>
+                <default>false</default>
+                <label>Lancaster</label>
+            </value>
+            <value>
+                <fullName>Long Beach</fullName>
+                <default>false</default>
+                <label>Long Beach</label>
+            </value>
+            <value>
+                <fullName>Los Angeles</fullName>
+                <default>false</default>
+                <label>Los Angeles</label>
+            </value>
+            <value>
+                <fullName>Lynwood</fullName>
+                <default>false</default>
+                <label>Lynwood</label>
+            </value>
+            <value>
+                <fullName>Malibu</fullName>
+                <default>false</default>
+                <label>Malibu</label>
+            </value>
+            <value>
+                <fullName>Menifee</fullName>
+                <default>false</default>
+                <label>Menifee</label>
+            </value>
+            <value>
+                <fullName>Mission Viejo</fullName>
+                <default>false</default>
+                <label>Mission Viejo</label>
+            </value>
+            <value>
+                <fullName>Monrovia</fullName>
+                <default>false</default>
+                <label>Monrovia</label>
+            </value>
+            <value>
+                <fullName>Montebello</fullName>
+                <default>false</default>
+                <label>Montebello</label>
+            </value>
+            <value>
+                <fullName>Moorpark</fullName>
+                <default>false</default>
+                <label>Moorpark</label>
+            </value>
+            <value>
+                <fullName>Moreno Valley</fullName>
+                <default>false</default>
+                <label>Moreno Valley</label>
+            </value>
+            <value>
+                <fullName>Murrieta</fullName>
+                <default>false</default>
+                <label>Murrieta</label>
+            </value>
+            <value>
+                <fullName>National City</fullName>
+                <default>false</default>
+                <label>National City</label>
+            </value>
+            <value>
+                <fullName>Needles</fullName>
+                <default>false</default>
+                <label>Needles</label>
+            </value>
+            <value>
+                <fullName>Newport Beach</fullName>
+                <default>false</default>
+                <label>Newport Beach</label>
+            </value>
+            <value>
+                <fullName>North Hollywood</fullName>
+                <default>false</default>
+                <label>North Hollywood</label>
+            </value>
+            <value>
+                <fullName>Northern Los Angeles</fullName>
+                <default>false</default>
+                <label>Northern Los Angeles</label>
+            </value>
+            <value>
+                <fullName>Northridge</fullName>
+                <default>false</default>
+                <label>Northridge</label>
+            </value>
+            <value>
+                <fullName>Norwalk</fullName>
+                <default>false</default>
+                <label>Norwalk</label>
+            </value>
+            <value>
+                <fullName>Oceanside</fullName>
+                <default>false</default>
+                <label>Oceanside</label>
+            </value>
+            <value>
+                <fullName>Ojai</fullName>
+                <default>false</default>
+                <label>Ojai</label>
+            </value>
+            <value>
+                <fullName>Ontario</fullName>
+                <default>false</default>
+                <label>Ontario</label>
+            </value>
+            <value>
+                <fullName>Orange</fullName>
+                <default>false</default>
+                <label>Orange</label>
+            </value>
+            <value>
+                <fullName>Oxnard</fullName>
+                <default>false</default>
+                <label>Oxnard</label>
+            </value>
+            <value>
+                <fullName>Pacific Palisades</fullName>
+                <default>false</default>
+                <label>Pacific Palisades</label>
+            </value>
+            <value>
+                <fullName>Palm Springs</fullName>
+                <default>false</default>
+                <label>Palm Springs</label>
+            </value>
+            <value>
+                <fullName>Palmdale</fullName>
+                <default>false</default>
+                <label>Palmdale</label>
+            </value>
+            <value>
+                <fullName>Pasadena</fullName>
+                <default>false</default>
+                <label>Pasadena</label>
+            </value>
+            <value>
+                <fullName>Perris</fullName>
+                <default>false</default>
+                <label>Perris</label>
+            </value>
+            <value>
+                <fullName>Pico Rivera</fullName>
+                <default>false</default>
+                <label>Pico Rivera</label>
+            </value>
+            <value>
+                <fullName>Placentia</fullName>
+                <default>false</default>
+                <label>Placentia</label>
+            </value>
+            <value>
+                <fullName>Pomona</fullName>
+                <default>false</default>
+                <label>Pomona</label>
+            </value>
+            <value>
+                <fullName>Rancho Cucamonga</fullName>
+                <default>false</default>
+                <label>Rancho Cucamonga</label>
+            </value>
+            <value>
+                <fullName>Redondo Beach</fullName>
+                <default>false</default>
+                <label>Redondo Beach</label>
+            </value>
+            <value>
+                <fullName>Rialto</fullName>
+                <default>false</default>
+                <label>Rialto</label>
+            </value>
+            <value>
+                <fullName>Riverside</fullName>
+                <default>false</default>
+                <label>Riverside</label>
+            </value>
+            <value>
+                <fullName>San Bernardino</fullName>
+                <default>false</default>
+                <label>San Bernardino</label>
+            </value>
+            <value>
+                <fullName>San Clemente</fullName>
+                <default>false</default>
+                <label>San Clemente</label>
+            </value>
+            <value>
+                <fullName>San Diego</fullName>
+                <default>false</default>
+                <label>San Diego</label>
+            </value>
+            <value>
+                <fullName>San Dimas</fullName>
+                <default>false</default>
+                <label>San Dimas</label>
+            </value>
+            <value>
+                <fullName>San Fernando</fullName>
+                <default>false</default>
+                <label>San Fernando</label>
+            </value>
+            <value>
+                <fullName>San Gabriel</fullName>
+                <default>false</default>
+                <label>San Gabriel</label>
+            </value>
+            <value>
+                <fullName>San Jacinto</fullName>
+                <default>false</default>
+                <label>San Jacinto</label>
+            </value>
+            <value>
+                <fullName>San Jose</fullName>
+                <default>false</default>
+                <label>San Jose</label>
+            </value>
+            <value>
+                <fullName>San Juan Capistrano</fullName>
+                <default>false</default>
+                <label>San Juan Capistrano</label>
+            </value>
+            <value>
+                <fullName>San Luis Obispo</fullName>
+                <default>false</default>
+                <label>San Luis Obispo</label>
+            </value>
+            <value>
+                <fullName>San Marcos</fullName>
+                <default>false</default>
+                <label>San Marcos</label>
+            </value>
+            <value>
+                <fullName>San Pedro</fullName>
+                <default>false</default>
+                <label>San Pedro</label>
+            </value>
+            <value>
+                <fullName>Santa Ana</fullName>
+                <default>false</default>
+                <label>Santa Ana</label>
+            </value>
+            <value>
+                <fullName>Santa Barbara</fullName>
+                <default>false</default>
+                <label>Santa Barbara</label>
+            </value>
+            <value>
+                <fullName>Santa Clarita</fullName>
+                <default>false</default>
+                <label>Santa Clarita</label>
+            </value>
+            <value>
+                <fullName>Santa Monica</fullName>
+                <default>false</default>
+                <label>Santa Monica</label>
+            </value>
+            <value>
+                <fullName>Santa Paula</fullName>
+                <default>false</default>
+                <label>Santa Paula</label>
+            </value>
+            <value>
+                <fullName>Santee</fullName>
+                <default>false</default>
+                <label>Santee</label>
+            </value>
+            <value>
+                <fullName>Simi Valley</fullName>
+                <default>false</default>
+                <label>Simi Valley</label>
+            </value>
+            <value>
+                <fullName>South Bay</fullName>
+                <default>false</default>
+                <label>South Bay</label>
+            </value>
+            <value>
+                <fullName>South Gate</fullName>
+                <default>false</default>
+                <label>South Gate</label>
+            </value>
+            <value>
+                <fullName>South Los Angeles</fullName>
+                <default>false</default>
+                <label>South Los Angeles</label>
+            </value>
+            <value>
+                <fullName>Spring Valley</fullName>
+                <default>false</default>
+                <label>Spring Valley</label>
+            </value>
+            <value>
+                <fullName>Stanton</fullName>
+                <default>false</default>
+                <label>Stanton</label>
+            </value>
+            <value>
+                <fullName>Studio City</fullName>
+                <default>false</default>
+                <label>Studio City</label>
+            </value>
+            <value>
+                <fullName>Sun City</fullName>
+                <default>false</default>
+                <label>Sun City</label>
+            </value>
+            <value>
+                <fullName>Temecula</fullName>
+                <default>false</default>
+                <label>Temecula</label>
+            </value>
+            <value>
+                <fullName>Thousand Oaks</fullName>
+                <default>false</default>
+                <label>Thousand Oaks</label>
+            </value>
+            <value>
+                <fullName>Torrance</fullName>
+                <default>false</default>
+                <label>Torrance</label>
+            </value>
+            <value>
+                <fullName>Tustin</fullName>
+                <default>false</default>
+                <label>Tustin</label>
+            </value>
+            <value>
+                <fullName>Upland</fullName>
+                <default>false</default>
+                <label>Upland</label>
+            </value>
+            <value>
+                <fullName>Van Nuys</fullName>
+                <default>false</default>
+                <label>Van Nuys</label>
+            </value>
+            <value>
+                <fullName>Ventura</fullName>
+                <default>false</default>
+                <label>Ventura</label>
+            </value>
+            <value>
+                <fullName>Victorville</fullName>
+                <default>false</default>
+                <label>Victorville</label>
+            </value>
+            <value>
+                <fullName>View Park-Windsor Hills</fullName>
+                <default>false</default>
+                <label>View Park-Windsor Hills</label>
+            </value>
+            <value>
+                <fullName>Vista</fullName>
+                <default>false</default>
+                <label>Vista</label>
+            </value>
+            <value>
+                <fullName>West Covina</fullName>
+                <default>false</default>
+                <label>West Covina</label>
+            </value>
+            <value>
+                <fullName>West Hollywood</fullName>
+                <default>false</default>
+                <label>West Hollywood</label>
+            </value>
+            <value>
+                <fullName>Westlake</fullName>
+                <default>false</default>
+                <label>Westlake</label>
+            </value>
+            <value>
+                <fullName>Westlake Village</fullName>
+                <default>false</default>
+                <label>Westlake Village</label>
+            </value>
+            <value>
+                <fullName>Westminster</fullName>
+                <default>false</default>
+                <label>Westminster</label>
+            </value>
+            <value>
+                <fullName>Whittier</fullName>
+                <default>false</default>
+                <label>Whittier</label>
+            </value>
+            <value>
+                <fullName>Winchester</fullName>
+                <default>false</default>
+                <label>Winchester</label>
+            </value>
+            <value>
+                <fullName>Yorba Linda</fullName>
+                <default>false</default>
+                <label>Yorba Linda</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

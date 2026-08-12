@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tourable__c</fullName>
+    <label>Tourable?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Awaiting Construction (no)</fullName>
+                <default>false</default>
+                <label>Awaiting Construction (no)</label>
+            </value>
+            <value>
+                <fullName>Admin Office (No)</fullName>
+                <default>false</default>
+                <label>Admin Office (No)</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>No</fullName>
+                <default>false</default>
+                <label>No</label>
+            </value>
+            <value>
+                <fullName>SS only (no)</fullName>
+                <default>false</default>
+                <label>SS only (no)</label>
+            </value>
+            <value>
+                <fullName>SBS (no)</fullName>
+                <default>false</default>
+                <label>SBS (no)</label>
+            </value>
+            <value>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <label>Yes</label>
+            </value>
+            <value>
+                <fullName>Yes (CDS-Admin only)</fullName>
+                <default>false</default>
+                <label>Yes (CDS-Admin only)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grant_End_Date__c</fullName>
+    <description>Last day of the grant&apos;s period of performance, inclusive - a 10/01 to 09/30 award ends on 09/30. Drives Grant Length. Costs incurred after this date are not reimbursable, so it is the cut-off the reimbursement schedule is built against.</description>
+    <inlineHelpText>Last day of the period of performance, inclusive. A one-year 10/01 award ends 09/30, not 10/01.</inlineHelpText>
+    <label>Grant End Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

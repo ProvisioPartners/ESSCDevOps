@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grant_Period_Amount__c</fullName>
+    <description>Amount claimed for this single reimbursement period. Once Grant Period Status is Received this is the amount that was reimbursed, and it is what the Roll Up Government Grant Award Paid flow sums into Total Award Paid on the grant Opportunity. Keep it equal to the amount actually received - if a period settles short, split it (see the Grant Period Status help text).</description>
+    <inlineHelpText>Amount claimed for this reimbursement period. Once Received, it must equal what was actually paid - split the row if the funder pays short.</inlineHelpText>
+    <label>Grant Period Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>
