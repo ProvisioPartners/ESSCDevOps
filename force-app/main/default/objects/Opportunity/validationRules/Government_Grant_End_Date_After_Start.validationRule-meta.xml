@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Government_Grant_End_Date_After_Start</fullName>
+    <active>false</active>
+    <description>Keeps the period of performance the right way round on Government Grants. Grant Length is calculated from these dates and would go negative if reversed. Fires only when both are populated, so a grant can still be saved mid-entry.</description>
+    <errorConditionFormula>AND(
+    RecordType.DeveloperName = &apos;Government_Grant&apos;,
+    NOT(ISBLANK(Grant_Start_Date__c)),
+    NOT(ISBLANK(Grant_End_Date__c)),
+    Grant_End_Date__c &lt; Grant_Start_Date__c
+)</errorConditionFormula>
+    <errorDisplayField>Grant_End_Date__c</errorDisplayField>
+    <errorMessage>Grant End Date must be on or after Grant Start Date.</errorMessage>
+</ValidationRule>

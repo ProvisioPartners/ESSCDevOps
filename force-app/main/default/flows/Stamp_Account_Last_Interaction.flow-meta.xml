@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>65.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Is_More_Recent</name>
+        <label>Is More Recent?</label>
+        <locationX>176</locationX>
+        <locationY>278</locationY>
+        <defaultConnectorLabel>No - Leave Account Alone</defaultConnectorLabel>
+        <rules>
+            <name>Yes_Stamp_Account</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>fxIsMoreRecent</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Stamp_Account</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Stamps Last Interaction Date and Type on the parent Account whenever an Interaction is logged. Guarded so a backdated Interaction cannot overwrite a more recent one.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>fxInteractionDate</name>
+        <dataType>Date</dataType>
+        <expression>DATEVALUE({!$Record.StartTime})</expression>
+    </formulas>
+    <formulas>
+        <name>fxInteractionType</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!$Record.InteractionType})</expression>
+    </formulas>
+    <formulas>
+        <name>fxIsMoreRecent</name>
+        <dataType>Boolean</dataType>
+        <expression>OR(
+    ISBLANK({!Get_Account.Last_Interaction_Date__c}),
+    {!fxInteractionDate} &gt; {!Get_Account.Last_Interaction_Date__c}
+)</expression>
+    </formulas>
+    <interviewLabel>Stamp Account Last Interaction {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Stamp Account Last Interaction</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Account</name>
+        <label>Get Account</label>
+        <locationX>176</locationX>
+        <locationY>158</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Is_More_Recent</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.AccountId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Last_Interaction_Date__c</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Stamp_Account</name>
+        <label>Stamp Account</label>
+        <locationX>50</locationX>
+        <locationY>398</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.AccountId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Last_Interaction_Date__c</field>
+            <value>
+                <elementReference>fxInteractionDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Last_Interaction_Type__c</field>
+            <value>
+                <elementReference>fxInteractionType</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Account</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>AccountId</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>StartTime</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>Interaction</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

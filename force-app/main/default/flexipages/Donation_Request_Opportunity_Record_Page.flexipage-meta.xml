@@ -134,6 +134,10 @@
         </itemInstances>
         <itemInstances>
             <componentInstance>
+                <componentInstanceProperties>
+                    <name>hideHeader</name>
+                    <value>false</value>
+                </componentInstanceProperties>
                 <componentName>force:relatedListQuickLinksContainer</componentName>
                 <identifier>force_relatedListQuickLinksContainer</identifier>
             </componentInstance>
@@ -141,7 +145,7 @@
         <name>sidebar</name>
         <type>Region</type>
     </flexiPageRegions>
-    <masterLabel>Donation Request Opportunity Record Page</masterLabel>
+    <masterLabel>ESSC Development Donation Request Opportunity Record Page</masterLabel>
     <sobjectType>Opportunity</sobjectType>
     <template>
         <name>flexipage:recordHomeTemplateDesktop</name>

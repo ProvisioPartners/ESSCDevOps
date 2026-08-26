@@ -153,6 +153,16 @@ Grants Organization Account Record Page</description>
                 <identifier>RecordIndustryField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Legacy_ID__c</fieldItem>
+                <identifier>RecordLegacy_ID__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-c75d1de4-2d68-41ab-a87d-e201537b8af2</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -650,11 +660,15 @@ Grants Organization Account Record Page</description>
             <componentInstance>
                 <componentInstanceProperties>
                     <name>displayLastUpdated</name>
-                    <value>false</value>
+                    <value>true</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>enableEditCreate</name>
                     <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>groups</name>
+                    <value>[{&quot;groupName&quot;:&quot;Summary Data&quot;,&quot;index&quot;:1,&quot;allFields&quot;:[{&quot;value&quot;:&quot;AverageGiftAmount&quot;},{&quot;value&quot;:&quot;BestGiftYear&quot;},{&quot;value&quot;:&quot;BookedPledges&quot;},{&quot;value&quot;:&quot;CompositeRfmScore&quot;},{&quot;value&quot;:&quot;GiftCount&quot;}]},{&quot;groupName&quot;:&quot;Current Year Data&quot;,&quot;index&quot;:2,&quot;allFields&quot;:[{&quot;value&quot;:&quot;CurrentRecurringStartDate&quot;},{&quot;value&quot;:&quot;CurrentYearGiftCount&quot;},{&quot;value&quot;:&quot;CurrentYearSoftCreditCount&quot;},{&quot;value&quot;:&quot;CurrentYearSoftCreditsAmount&quot;}]},{&quot;groupName&quot;:&quot;First Gift Data&quot;,&quot;index&quot;:3,&quot;allFields&quot;:[{&quot;value&quot;:&quot;FirstGiftAmount&quot;},{&quot;value&quot;:&quot;FirstGiftCampaignId&quot;},{&quot;value&quot;:&quot;FirstGiftDate&quot;},{&quot;value&quot;:&quot;FirstRecurringStartDate&quot;},{&quot;value&quot;:&quot;FirstSoftCreditAmount&quot;}]},{&quot;groupName&quot;:&quot;Last Gift Data&quot;,&quot;index&quot;:4,&quot;allFields&quot;:[{&quot;value&quot;:&quot;LastGiftAmount&quot;},{&quot;value&quot;:&quot;LastGiftDate&quot;},{&quot;value&quot;:&quot;LastSoftCreditAmount&quot;},{&quot;value&quot;:&quot;LastSoftCreditDate&quot;}]},{&quot;groupName&quot;:&quot;Totals&quot;,&quot;index&quot;:5,&quot;allFields&quot;:[{&quot;value&quot;:&quot;TotalBookableRevenue&quot;},{&quot;value&quot;:&quot;TotalGiftsAmount&quot;},{&quot;value&quot;:&quot;TotalHardSoftCredits&quot;},{&quot;value&quot;:&quot;TotalHardSoftCreditsAmount&quot;},{&quot;value&quot;:&quot;TotalPaidRcrInstallments&quot;}]}]</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>panelName</name>
@@ -1222,17 +1236,12 @@ Grants Organization Account Record Page</description>
                     <name>actionNames</name>
                     <valueList>
                         <valueListItems>
-                            <value>EnhancedAddRelation</value>
+                            <value>New</value>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>adminFilters</name>
-                    <valueList>
-                        <valueListItems>
-                            <value>CONTACT.IS_PERSON_ACCOUNT|EQUALS|true</value>
-                        </valueListItems>
-                    </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>maxRecordsToDisplay</name>
@@ -1244,7 +1253,7 @@ Grants Organization Account Record Page</description>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>relatedListApiName</name>
-                    <value>AccountContactRelations</value>
+                    <value>ConstituentRolesInstitution</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>relatedListDisplayType</name>
@@ -1254,22 +1263,28 @@ Grants Organization Account Record Page</description>
                     <name>relatedListFieldAliases</name>
                     <valueList>
                         <valueListItems>
-                            <value>CONTACT.FULL_NAME</value>
+                            <value>Name</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>CONTACT.EMAIL</value>
+                            <value>Person</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>CONTACT.PHONE1</value>
+                            <value>RoleType</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>ACCCONRELATION.ROLES</value>
+                            <value>Status</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>EffectiveStartDate</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>EffectiveEndDate</value>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>relatedListLabel</name>
-                    <value>Related Contacts</value>
+                    <value>Constituent Roles</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>showActionBar</name>

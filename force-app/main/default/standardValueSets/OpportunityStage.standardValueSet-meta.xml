@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Research</fullName>
+        <default>false</default>
+        <label>Research</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Qualification</fullName>
+        <default>false</default>
+        <description>You&apos;ve contacted the prospect and they&apos;re interested.</description>
+        <label>Qualification</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Cultivation</fullName>
+        <default>false</default>
+        <label>Cultivation</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>20</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Ask</fullName>
+        <default>false</default>
+        <label>Ask</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>50</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Stewardship</fullName>
+        <default>false</default>
+        <label>Stewardship</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>100</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed Won</fullName>
+        <default>false</default>
+        <description>Sold!</description>
+        <label>Closed Won</label>
+        <closed>true</closed>
+        <forecastCategory>Closed</forecastCategory>
+        <probability>100</probability>
+        <won>true</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed Lost</fullName>
+        <default>false</default>
+        <description>No sale.</description>
+        <label>Closed Lost</label>
+        <closed>true</closed>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Needs Analysis</fullName>
+        <default>false</default>
+        <description>You&apos;re defining the prospect&apos;s needs.</description>
+        <label>Needs Analysis</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>35</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Proposal</fullName>
+        <default>false</default>
+        <description>You&apos;re developing a sales proposal for the prospect.</description>
+        <label>Proposal</label>
+        <closed>false</closed>
+        <forecastCategory>BestCase</forecastCategory>
+        <probability>75</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Negotiation</fullName>
+        <default>false</default>
+        <description>You&apos;re working with the prospect on the proposal you delivered.</description>
+        <label>Negotiation</label>
+        <closed>false</closed>
+        <forecastCategory>Forecast</forecastCategory>
+        <probability>90</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Prospecting</fullName>
+        <default>false</default>
+        <description>Early research on a foundation or government grant before an LOI is submitted. Default open stage on the Grant Pipeline. Probability 10%.</description>
+        <label>Prospecting</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>10</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>LOI Submitted</fullName>
+        <default>false</default>
+        <description>Letter of Intent has been sent to the funder. Set LOI Submitted Date manually. Open stage at 20%. Counts toward the LOI Success Rate denominator.</description>
+        <label>LOI Submitted</label>
+        <closed>false</closed>
+        <forecastCategory>Pipeline</forecastCategory>
+        <probability>20</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>LOI Accepted - Full Proposal Invited</fullName>
+        <default>false</default>
+        <description>Funder invited a full proposal after the LOI. Set LOI Outcome to Accepted manually. Open stage at 50%. Counts toward the LOI Success Rate numerator.</description>
+        <label>LOI Accepted - Full Proposal Invited</label>
+        <closed>false</closed>
+        <forecastCategory>BestCase</forecastCategory>
+        <probability>50</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>LOI Declined</fullName>
+        <default>false</default>
+        <description>Funder declined the Letter of Intent. Probability 0%. Distinct from Declined, which is a loss after full proposal. Left open so it appears on the Grant Path in sequence. Do not clear Re-approach Eligibility Date or Next Open Cycle Date - those remain for future-cycle planning.</description>
+        <label>LOI Declined</label>
+        <closed>false</closed>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Full Proposal Submitted</fullName>
+        <default>false</default>
+        <description>Full proposal has been submitted to the funder. Open stage at 75%.</description>
+        <label>Full Proposal Submitted</label>
+        <closed>false</closed>
+        <forecastCategory>Forecast</forecastCategory>
+        <probability>75</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Awarded - Active</fullName>
+        <default>false</default>
+        <description>Grant has been awarded and is in its period of performance. Left open at 100% so the record stays workable until Closed - Complete. Distinct from Closed - Complete, which is used when the grant is fully closed out.</description>
+        <label>Awarded - Active</label>
+        <closed>false</closed>
+        <forecastCategory>Forecast</forecastCategory>
+        <probability>100</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Declined</fullName>
+        <default>false</default>
+        <description>Funder declined the full proposal or later request. Probability 0%. Distinct from LOI Declined. Left open so it appears on the Grant Path in sequence. Do not clear Re-approach Eligibility Date or Next Open Cycle Date.</description>
+        <label>Declined</label>
+        <closed>false</closed>
+        <forecastCategory>Omitted</forecastCategory>
+        <probability>0</probability>
+        <won>false</won>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Complete</fullName>
+        <default>false</default>
+        <description>The grant ran its full period of performance and is closed out - reporting done, no further action. Probability 100%. Left open on the stage definition so Grant Path can show Closed - Complete as its own step instead of a Closed dropdown. The Grant Renewal Alert flow still treats this stage name as terminal and suppresses the 6-month renewal reminder.</description>
+        <label>Closed - Complete</label>
+        <closed>false</closed>
+        <forecastCategory>Forecast</forecastCategory>
+        <probability>100</probability>
+        <won>false</won>
+    </standardValue>
+</StandardValueSet>

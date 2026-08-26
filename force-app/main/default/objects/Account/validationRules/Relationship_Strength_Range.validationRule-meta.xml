@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Relationship_Strength_Range</fullName>
+    <active>true</active>
+    <description>Relationship Strength is a 1-5 rating. Number(1,0) alone would accept 0 and 6-9.</description>
+    <errorConditionFormula>AND(
+    NOT(ISBLANK(Relationship_Strength__c)),
+    OR(
+        Relationship_Strength__c &lt; 1,
+        Relationship_Strength__c &gt; 5
+    )
+)</errorConditionFormula>
+    <errorDisplayField>Relationship_Strength__c</errorDisplayField>
+    <errorMessage>Relationship Strength must be between 1 and 5.</errorMessage>
+</ValidationRule>

@@ -127,40 +127,10 @@ Grants Organization Account Record Page</description>
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.ParentId</fieldItem>
-                <identifier>RecordParentIdField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
                     <value>required</value>
                 </fieldInstanceProperties>
                 <fieldItem>Record.Name</fieldItem>
                 <identifier>RecordNameField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Industry</fieldItem>
-                <identifier>RecordIndustryField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Type</fieldItem>
-                <identifier>RecordTypeField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -179,24 +149,8 @@ Grants Organization Account Record Page</description>
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.GivingStructure__c</fieldItem>
-                <identifier>RecordGivingStructure__cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.AnnualRevenue</fieldItem>
-                <identifier>RecordAnnualRevenueField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldItem>Record.Representative_Party__c</fieldItem>
-                <identifier>RecordRepresentative_Party__cField</identifier>
+                <fieldItem>Record.ParentId</fieldItem>
+                <identifier>RecordParentIdField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-c75d1de4-2d68-41ab-a87d-e201537b8af2</name>
@@ -209,8 +163,8 @@ Grants Organization Account Record Page</description>
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Relationship_Manager_Grants__c</fieldItem>
-                <identifier>RecordRelationship_Manager_Grants__cField</identifier>
+                <fieldItem>Record.Type</fieldItem>
+                <identifier>RecordTypeField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -219,8 +173,8 @@ Grants Organization Account Record Page</description>
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Relationship_Manager_Development__c</fieldItem>
-                <identifier>RecordRelationship_Manager_Development__cField</identifier>
+                <fieldItem>Record.Legislator__c</fieldItem>
+                <identifier>RecordLegislator_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -229,8 +183,18 @@ Grants Organization Account Record Page</description>
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Relationship_Manager_Partnerships__c</fieldItem>
-                <identifier>RecordRelationship_Manager_Partnerships__cField</identifier>
+                <fieldItem>Record.Outreach_Sensitivity__c</fieldItem>
+                <identifier>RecordOutreach_Sensitivity_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Legislative_District__c</fieldItem>
+                <identifier>RecordLegislative_District_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-b8243a59-87d7-4c60-9e83-3041fd111204</name>
@@ -267,8 +231,80 @@ Grants Organization Account Record Page</description>
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Relationship_Manager_Partnerships__c</fieldItem>
+                <identifier>RecordRelationship_Manager_Partnerships__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Relationship_Manager_Grants__c</fieldItem>
+                <identifier>RecordRelationship_Manager_Grants__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-745b3dcf-fa22-448e-bc14-eb853ba94877</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Relationship_Manager_Development__c</fieldItem>
+                <identifier>RecordRelationship_Manager_Development__cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <name>Facet-d8feee6a-c9a0-4938-acb2-f7397cd09355</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-745b3dcf-fa22-448e-bc14-eb853ba94877</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-d8feee6a-c9a0-4938-acb2-f7397cd09355</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:column</componentName>
+                <identifier>flexipage_column4</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-63306794-4581-4221-802f-315045395d65</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Phone</fieldItem>
                 <identifier>RecordPhoneField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Legislator_Phone__pc</fieldItem>
+                <identifier>RecordLegislator_Phone_pcField</identifier>
             </fieldInstance>
         </itemInstances>
         <itemInstances>
@@ -301,20 +337,30 @@ Grants Organization Account Record Page</description>
                 <identifier>RecordDo_Not_Mail_cField</identifier>
             </fieldInstance>
         </itemInstances>
+        <name>Facet-84dc8e08-fd15-45ea-829c-d47cc2ce151a</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Do_Not_Solicit__c</fieldItem>
-                <identifier>RecordDo_Not_Solicit_cField</identifier>
+                <fieldItem>Record.PersonEmail</fieldItem>
+                <identifier>RecordPersonEmailField</identifier>
             </fieldInstance>
         </itemInstances>
-        <name>Facet-84dc8e08-fd15-45ea-829c-d47cc2ce151a</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Legislator_Email__pc</fieldItem>
+                <identifier>RecordLegislator_Email_pcField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <itemInstances>
             <fieldInstance>
                 <fieldInstanceProperties>
@@ -333,6 +379,16 @@ Grants Organization Account Record Page</description>
                 </fieldInstanceProperties>
                 <fieldItem>Record.ShippingAddress</fieldItem>
                 <identifier>RecordShippingAddressField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Do_Not_Solicit__c</fieldItem>
+                <identifier>RecordDo_Not_Solicit_cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-a52efcb8-750b-4ee1-893a-d953fd0c34f6</name>
@@ -459,6 +515,24 @@ Grants Organization Account Record Page</description>
                 </componentInstanceProperties>
                 <componentName>flexipage:fieldSection</componentName>
                 <identifier>flexipage_fieldSection</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>columns</name>
+                    <value>Facet-63306794-4581-4221-802f-315045395d65</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>horizontalAlignment</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Relationship Manager</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:fieldSection</componentName>
+                <identifier>flexipage_fieldSection2</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -607,8 +681,201 @@ Grants Organization Account Record Page</description>
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
+                <componentInstanceProperties>
+                    <name>graphName</name>
+                    <value>Organizations</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Relationships</value>
+                </componentInstanceProperties>
+                <componentName>runtime_industries_arcgraph:arcGraph</componentName>
+                <identifier>runtime_industries_arcgraph_arcGraph</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Details</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showLabel</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>runtime_industries_arcgraph:arcGraphRecordDetails</componentName>
+                <identifier>runtime_industries_arcgraph_arcGraphRecordDetails</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>parentFieldApiName</name>
+                    <value>Account.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListApiName</name>
+                    <value>PersonAccountContactRelations</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListComponentOverride</name>
+                    <value>NONE</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>rowsToDisplay</name>
+                    <value>10</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>force:relatedListSingleContainer</componentName>
+                <identifier>force_relatedListSingleContainer</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>actionNames</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>EnhancedAddRelation</value>
+                        </valueListItems>
+                    </valueList>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>adminFilters</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>CONTACT.IS_PERSON_ACCOUNT|EQUALS|true</value>
+                        </valueListItems>
+                    </valueList>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>maxRecordsToDisplay</name>
+                    <value>10</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>parentFieldApiName</name>
+                    <value>Account.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListApiName</name>
+                    <value>AccountContactRelations</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListDisplayType</name>
+                    <value>ADVGRID</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListFieldAliases</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>CONTACT.FULL_NAME</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>CONTACT.EMAIL</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>CONTACT.PHONE1</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>ACCCONRELATION.ROLES</value>
+                        </valueListItems>
+                    </valueList>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListLabel</name>
+                    <value>Related Contacts</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sortFieldAlias</name>
+                    <value>__DEFAULT__</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sortFieldOrder</name>
+                    <value>Default</value>
+                </componentInstanceProperties>
+                <componentName>lst:dynamicRelatedList</componentName>
+                <identifier>lst_dynamicRelatedList</identifier>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-70cdd31e-9ebb-45e5-895a-4dd202f8da3b</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
+        <itemInstances>
+            <componentInstance>
                 <componentName>runtime_industries_actionplan:listCard</componentName>
                 <identifier>runtime_industries_actionplan_listCard</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>actionNames</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>adminFilters</name>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>maxRecordsToDisplay</name>
+                    <value>5</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>parentFieldApiName</name>
+                    <value>Account.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListApiName</name>
+                    <value>Opportunities</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListDisplayType</name>
+                    <value>ADVGRID</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListFieldAliases</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>OPPORTUNITY.NAME</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>OPPORTUNITY.RECORDTYPE</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>OPPORTUNITY.STAGE_NAME</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>OPPORTUNITY.AMOUNT</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>OPPORTUNITY.CLOSE_DATE</value>
+                        </valueListItems>
+                    </valueList>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListLabel</name>
+                    <value>Opportunities</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sortFieldAlias</name>
+                    <value>__DEFAULT__</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sortFieldOrder</name>
+                    <value>Default</value>
+                </componentInstanceProperties>
+                <componentName>lst:dynamicRelatedList</componentName>
+                <identifier>lst_dynamicRelatedList2</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -663,6 +930,20 @@ Grants Organization Account Record Page</description>
                 </componentInstanceProperties>
                 <componentName>flexipage:tab</componentName>
                 <identifier>flexipage_tab5</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
+                    <value>Facet-70cdd31e-9ebb-45e5-895a-4dd202f8da3b</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Relationships</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>flexipage_tab3</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -793,77 +1074,6 @@ Grants Organization Account Record Page</description>
                 </componentInstanceProperties>
                 <componentName>lst:dynamicRelatedList</componentName>
                 <identifier>lst_dynamicRelatedList5</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>actionNames</name>
-                    <valueList>
-                        <valueListItems>
-                            <value>EnhancedAddRelation</value>
-                        </valueListItems>
-                    </valueList>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>adminFilters</name>
-                    <valueList>
-                        <valueListItems>
-                            <value>CONTACT.IS_PERSON_ACCOUNT|EQUALS|true</value>
-                        </valueListItems>
-                    </valueList>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>maxRecordsToDisplay</name>
-                    <value>10</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>parentFieldApiName</name>
-                    <value>Account.Id</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListApiName</name>
-                    <value>AccountContactRelations</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListDisplayType</name>
-                    <value>ADVGRID</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListFieldAliases</name>
-                    <valueList>
-                        <valueListItems>
-                            <value>CONTACT.FULL_NAME</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>CONTACT.EMAIL</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>CONTACT.PHONE1</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>ACCCONRELATION.ROLES</value>
-                        </valueListItems>
-                    </valueList>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListLabel</name>
-                    <value>Related Contacts</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>showActionBar</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>sortFieldAlias</name>
-                    <value>__DEFAULT__</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>sortFieldOrder</name>
-                    <value>Default</value>
-                </componentInstanceProperties>
-                <componentName>lst:dynamicRelatedList</componentName>
-                <identifier>lst_dynamicRelatedList</identifier>
             </componentInstance>
         </itemInstances>
         <itemInstances>
