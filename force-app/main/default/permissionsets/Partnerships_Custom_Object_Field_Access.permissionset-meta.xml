@@ -557,11 +557,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Opportunity.Service_Line_Lead__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Opportunity.SourceId</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -693,6 +688,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Task.Visible_to_All_Users__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Ticket__c.Type_of_Ticket__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>

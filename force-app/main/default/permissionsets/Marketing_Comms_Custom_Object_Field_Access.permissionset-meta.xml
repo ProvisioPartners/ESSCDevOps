@@ -525,6 +525,11 @@
         <field>OutreachSourceCode.UsageType</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Ticket__c.Type_of_Ticket__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Marketing &amp; Comms Custom Object &amp; Field Access</label>
     <objectPermissions>
