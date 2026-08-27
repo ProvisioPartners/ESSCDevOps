@@ -24,6 +24,10 @@
                 <behavior>Edit</behavior>
                 <field>Type</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Government_Level__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -278,41 +282,12 @@
         </relatedContentItems>
     </relatedContent>
     <relatedLists>
-        <fields>Name</fields>
-        <fields>Status</fields>
-        <fields>SourceCode</fields>
-        <relatedList>OutreachSourceCodes</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>GiftDesignation</fields>
-        <fields>AllocatedPercentage</fields>
-        <relatedList>GiftDefaultDesignationParentRecords</relatedList>
-    </relatedLists>
-    <relatedLists>
         <relatedList>RelatedFileList</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>Name</fields>
-        <fields>Donor</fields>
-        <fields>Status</fields>
-        <fields>FormalCommitmentType</fields>
-        <fields>ExpectedTotalCmtAmount</fields>
-        <fields>TotalPaidTransactio846</fields>
-        <fields>EffectiveStartDate</fields>
-        <fields>ExpectedEndDate</fields>
-        <relatedList>GiftCommitments</relatedList>
-    </relatedLists>
-    <relatedLists>
-        <fields>Name</fields>
-        <fields>Donor</fields>
-        <fields>CurrentAmount</fields>
-        <fields>TransactionDate</fields>
-        <fields>Status</fields>
-        <relatedList>GiftTransactions</relatedList>
     </relatedLists>
     <relatedLists>
         <fields>MEMBER_TYPE</fields>
         <fields>STATUS</fields>
+        <fields>Role__c</fields>
         <fields>FULL_NAME</fields>
         <fields>TITLE</fields>
         <fields>FIRST_NAME</fields>

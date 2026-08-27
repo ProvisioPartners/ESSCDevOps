@@ -41,4 +41,8 @@
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>ESSC Gov Relations Application Access</label>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>RunFlow</name>
+    </userPermissions>
 </PermissionSet>

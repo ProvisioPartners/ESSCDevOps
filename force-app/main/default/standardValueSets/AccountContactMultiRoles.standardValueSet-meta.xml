@@ -71,4 +71,9 @@
         <default>false</default>
         <label>Staffer</label>
     </standardValue>
+    <standardValue>
+        <fullName>ESSC Point of Contact</fullName>
+        <default>false</default>
+        <label>ESSC Point of Contact</label>
+    </standardValue>
 </StandardValueSet>

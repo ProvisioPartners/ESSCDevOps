@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legislators_and_Staff</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>Legislator__c</columns>
+    <columns>Government_Level__c</columns>
+    <columns>District_ID_Congress__c</columns>
+    <columns>District_ID_Senate__c</columns>
+    <columns>District_ID_State_Assembly__c</columns>
+    <columns>Relationship_Stage__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Legislator__c</field>
+        <operation>equals</operation>
+        <value>Yes</value>
+    </filters>
+    <label>Legislators and Staff</label>
+    <sharedTo>
+        <group>Gov_Relations</group>
+    </sharedTo>
+</ListView>

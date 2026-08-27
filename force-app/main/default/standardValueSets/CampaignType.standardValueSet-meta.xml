@@ -51,4 +51,24 @@
         <default>false</default>
         <label>Legislative Outreach</label>
     </standardValue>
+    <standardValue>
+        <fullName>Fly-In</fullName>
+        <default>false</default>
+        <label>Fly-In</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Phone Outreach</fullName>
+        <default>false</default>
+        <label>Phone Outreach</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Written Correspondence</fullName>
+        <default>false</default>
+        <label>Written Correspondence</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Legislative Hearing</fullName>
+        <default>false</default>
+        <label>Legislative Hearing</label>
+    </standardValue>
 </StandardValueSet>

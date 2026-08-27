@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <excludeButtons>DataDotComAccountInsights</excludeButtons>
-    <excludeButtons>DataDotComClean</excludeButtons>
+    <excludeButtons>DataDotComCompanyHierarchy</excludeButtons>
     <excludeButtons>DisableCustomerPortalAccount</excludeButtons>
     <excludeButtons>DisablePartnerPortalAccount</excludeButtons>
     <excludeButtons>IncludeOffline</excludeButtons>
-    <excludeButtons>OpenSlackRecordChannel</excludeButtons>
     <excludeButtons>Share</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -525,6 +523,15 @@
             <quickActionName>SendEmail</quickActionName>
         </quickActionListItems>
     </quickActionList>
+    <relatedLists>
+        <fields>Name</fields>
+        <fields>Institution</fields>
+        <fields>RoleType</fields>
+        <fields>Status</fields>
+        <fields>EffectiveStartDate</fields>
+        <fields>EffectiveEndDate</fields>
+        <relatedList>ConstituentRoles</relatedList>
+    </relatedLists>
     <relatedLists>
         <fields>ACCOUNT.NAME</fields>
         <fields>ACCCONRELATION.ROLES</fields>

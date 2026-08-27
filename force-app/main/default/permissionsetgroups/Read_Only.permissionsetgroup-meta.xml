@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Permission Sets Included:
+
+ESSC Read Only Access
+ESSC Standard System Permissions</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Read Only</label>
+    <permissionSets>ESSC_Read_Only_Access</permissionSets>
+    <permissionSets>ESSC_Standard_System_Permissions</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ESSC_ProgramsServiceLines</fullName>
+    <columns>Name</columns>
+    <columns>Summary</columns>
+    <columns>StartDate</columns>
+    <columns>Status</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Summary</field>
+        <operation>equals</operation>
+        <value>ESSC Programs</value>
+    </filters>
+    <label>ESSC Programs/Service Lines</label>
+</ListView>

@@ -37,11 +37,23 @@
             <default>true</default>
         </values>
         <values>
+            <fullName>Fly-In</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Legislative Hearing</fullName>
+            <default>false</default>
+        </values>
+        <values>
             <fullName>Legislative Outreach</fullName>
             <default>false</default>
         </values>
         <values>
             <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone Outreach</fullName>
             <default>false</default>
         </values>
         <values>
@@ -62,6 +74,25 @@
         </values>
         <values>
             <fullName>Website Direct</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Written Correspondence</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Government_Level__c</picklist>
+        <values>
+            <fullName>Both</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Federal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>State</fullName>
             <default>false</default>
         </values>
     </picklistValues>
