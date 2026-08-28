@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Issue_Area__c</fullName>
+    <description>Policy areas addressed by this advocacy campaign. Uses the shared Issue Area value set for consistent reporting.</description>
+    <inlineHelpText>Select every policy area addressed by this campaign.</inlineHelpText>
+    <label>Issue Area</label>
+    <required>false</required>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Issue_Area</valueSetName>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Portfolio__c</fullName>
+    <description>TRUE when the running/viewing user is the Relationship Manager on this Account for any team (Development, Grants, or Partnerships). Uses the $User global variable so it evaluates per running user - filter portfolio reports on this field to scope each RM to their own constituents.</description>
+    <formula>OR(
+    Relationship_Manager_Development__c = $User.Id,
+    Relationship_Manager_Grants__c = $User.Id,
+    Relationship_Manager_Partnerships__c = $User.Id
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Checked when you are the Relationship Manager for this account on any team.</inlineHelpText>
+    <label>My Portfolio</label>
+    <type>Checkbox</type>
+</CustomField>
