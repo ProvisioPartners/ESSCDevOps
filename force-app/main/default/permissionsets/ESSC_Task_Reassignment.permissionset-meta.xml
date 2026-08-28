@@ -7,16 +7,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>AccountContactRelation.Contact_Designation__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>AccountContactRelation.Role_if_Other__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Event.Description</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -60,6 +50,10 @@
         <field>Task.WhoId</field>
         <readable>true</readable>
     </fieldPermissions>
+    <flowAccesses>
+        <enabled>true</enabled>
+        <flow>ESSC_Reassign_Task</flow>
+    </flowAccesses>
     <hasActivationRequired>false</hasActivationRequired>
     <label>ESSC Task Reassignment</label>
     <tabSettings>
@@ -69,9 +63,5 @@
     <userPermissions>
         <enabled>true</enabled>
         <name>ActivitiesAccess</name>
-    </userPermissions>
-    <userPermissions>
-        <enabled>true</enabled>
-        <name>TransferAnyEntity</name>
     </userPermissions>
 </PermissionSet>

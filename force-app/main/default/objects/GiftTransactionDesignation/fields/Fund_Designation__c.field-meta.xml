@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fund_Designation__c</fullName>
+    <description>Name of the Gift Designation (fund) this line points at, surfaced on the line for the monthly Accounting export.</description>
+    <externalId>false</externalId>
+    <formula>GiftDesignation.Name</formula>
+    <label>Fund / Designation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
