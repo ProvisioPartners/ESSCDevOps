@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enforce_Foundation_Grant_Read_Only</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    $Permission.GR_Read_Only_Foundation_Grants,
+    RecordType.DeveloperName = &apos;Foundation_Grant&apos;,
+    ISCHANGED(Id)
+)</errorConditionFormula>
+    <errorMessage>You do not have permission to modify Foundation Grant opportunities. These records are read-only.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Returned_to_Funder__c</fullName>
+    <description>Total Returned to Funder. Sum of Total Refunded across every Gift Commitment linked to this Opportunity - award money returned to the funder (unspent, disallowed, or clawed-back), tracked as Gift Refund records on the reimbursement transactions. Maintained by the DLRS roll-up Grant Total Returned to Funder. Visibility only: NPC is assumed to net refunds out of the commitment&apos;s paid total, so Total Received to Date and Running Balance already reflect them. Do not edit by hand. See docs/grant-reimbursement-rollups.md.</description>
+    <inlineHelpText>Award money returned to the funder to date, summed from Total Refunded on this grant&apos;s Gift Commitments. Calculated - do not edit.</inlineHelpText>
+    <label>Total Returned to Funder</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

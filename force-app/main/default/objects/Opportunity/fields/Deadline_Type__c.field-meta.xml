@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deadline_Type__c</fullName>
+    <description>How this grant deadline works: Hard, Rolling, or Invitation-Only.</description>
+    <inlineHelpText>How this grant deadline works: Hard, Rolling, or Invitation-Only.</inlineHelpText>
+    <label>Deadline Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Hard</fullName>
+                <default>false</default>
+                <label>Hard</label>
+            </value>
+            <value>
+                <fullName>Rolling</fullName>
+                <default>false</default>
+                <label>Rolling</label>
+            </value>
+            <value>
+                <fullName>Invitation-Only</fullName>
+                <default>false</default>
+                <label>Invitation-Only</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

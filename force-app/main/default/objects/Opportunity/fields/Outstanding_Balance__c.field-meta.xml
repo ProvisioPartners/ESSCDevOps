@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Outstanding_Balance__c</fullName>
-    <formula>Amount -  Total_Award_Amount__c</formula>
+    <formula>Amount - Total_Award_Paid__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Outstanding Balance</label>
     <precision>18</precision>

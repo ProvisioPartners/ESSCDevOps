@@ -10,19 +10,31 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Scheduled</fullName>
-                <default>false</default>
-                <label>Scheduled</label>
-            </value>
-            <value>
                 <fullName>Received</fullName>
                 <default>false</default>
                 <label>Received</label>
             </value>
             <value>
+                <fullName>Requested</fullName>
+                <default>false</default>
+                <label>Requested</label>
+            </value>
+            <value>
+                <fullName>Partial</fullName>
+                <default>false</default>
+                <label>Partial</label>
+            </value>
+            <value>
                 <fullName>Overdue</fullName>
                 <default>false</default>
+                <isActive>false</isActive>
                 <label>Overdue</label>
+            </value>
+            <value>
+                <fullName>Scheduled</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Scheduled</label>
             </value>
         </valueSetDefinition>
     </valueSet>

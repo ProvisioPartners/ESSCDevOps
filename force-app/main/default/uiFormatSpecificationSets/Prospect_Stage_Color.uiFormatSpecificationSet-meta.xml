@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UiFormatSpecificationSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <field>Account.Prospect_Stage__c</field>
+    <formatType>ICON</formatType>
+    <masterLabel>Prospect Stage Color</masterLabel>
+    <sobjectType>Account</sobjectType>
+    <uiFormatSpecifications>
+        <formatProperties>{&quot;icon&quot;:&quot;circle&quot;,&quot;iconColor&quot;:&quot;green&quot;}</formatProperties>
+        <formatType>ICON</formatType>
+        <order>1</order>
+        <visibilityRule>
+            <criteria>
+                <leftValue>{!Record.Prospect_Stage__c}</leftValue>
+                <operator>EQUAL</operator>
+                <rightValue>Active Partner</rightValue>
+            </criteria>
+        </visibilityRule>
+    </uiFormatSpecifications>
+    <uiFormatSpecifications>
+        <formatProperties>{&quot;icon&quot;:&quot;circle&quot;,&quot;iconColor&quot;:&quot;red&quot;}</formatProperties>
+        <formatType>ICON</formatType>
+        <order>2</order>
+        <visibilityRule>
+            <criteria>
+                <leftValue>{!Record.Prospect_Stage__c}</leftValue>
+                <operator>EQUAL</operator>
+                <rightValue>Lapsed</rightValue>
+            </criteria>
+        </visibilityRule>
+    </uiFormatSpecifications>
+    <uiFormatSpecifications>
+        <formatProperties>{&quot;icon&quot;:&quot;circle&quot;,&quot;iconColor&quot;:&quot;blue&quot;}</formatProperties>
+        <formatType>ICON</formatType>
+        <order>3</order>
+        <visibilityRule>
+            <criteria>
+                <leftValue>{!Record.Prospect_Stage__c}</leftValue>
+                <operator>EQUAL</operator>
+                <rightValue>Prospect</rightValue>
+            </criteria>
+        </visibilityRule>
+    </uiFormatSpecifications>
+    <uiFormatSpecifications>
+        <formatProperties>{&quot;icon&quot;:&quot;circle&quot;,&quot;iconColor&quot;:&quot;orange&quot;}</formatProperties>
+        <formatType>ICON</formatType>
+        <order>4</order>
+        <visibilityRule>
+            <criteria>
+                <leftValue>{!Record.Prospect_Stage__c}</leftValue>
+                <operator>EQUAL</operator>
+                <rightValue>Outreach</rightValue>
+            </criteria>
+        </visibilityRule>
+    </uiFormatSpecifications>
+</UiFormatSpecificationSet>

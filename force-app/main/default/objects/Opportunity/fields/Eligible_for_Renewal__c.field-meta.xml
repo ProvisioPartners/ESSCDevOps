@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Eligible_for_Renewal__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Marks a grant that is up for a renewal decision. Forms the denominator (the &quot;eligible&quot; population) for the Grant Renewal Rate report and KPI.</description>
+    <inlineHelpText>Check when this grant is eligible to be renewed for a future cycle.</inlineHelpText>
+    <label>Eligible for Renewal</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

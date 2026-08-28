@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Open_Deliverables__c</fullName>
+    <description>Count of related Deliverables that are not Completed or Cancelled (i.e. open/overdue). Maintained automatically by the Recalc Open Deliverables flows.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Number of open or overdue deliverables on this Opportunity. Auto-calculated.</inlineHelpText>
+    <label>Open Deliverables</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

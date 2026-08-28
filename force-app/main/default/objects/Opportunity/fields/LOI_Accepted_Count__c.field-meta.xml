@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LOI_Accepted_Count__c</fullName>
+    <description>1 when LOI Outcome is Accepted, otherwise 0. Report helper so LOI Success Rate can be SUM(Accepted) / COUNT(Submitted). Submitted is defined by LOI Submitted Date, not current Stage.</description>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(LOI_Outcome__c, &quot;Accepted&quot;), 1, 0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>LOI Accepted Count</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

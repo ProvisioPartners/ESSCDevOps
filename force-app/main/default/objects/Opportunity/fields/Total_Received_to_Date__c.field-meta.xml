@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Received_to_Date__c</fullName>
+    <description>Total Received to Date. Sum of Total Paid Transaction Amount (TotalPaidTransactionAmount) across every Gift Commitment linked to this Opportunity by the standard Opportunity relationship. Maintained by the DLRS roll-up Grant Total Received to Date (dlrs__LookupRollupSummary2) - it cannot be a native roll-up summary because Gift Commitment is joined to Opportunity by lookup, not master-detail. The commitment&apos;s paid total is itself maintained by NPC Gift Commitment coordination, so this reflects reimbursements settled as of that processing. Do not edit by hand.</description>
+    <inlineHelpText>Total reimbursement received to date, summed from Total Paid Transaction Amount on this grant&apos;s Gift Commitments. Calculated - do not edit.</inlineHelpText>
+    <label>Total Received to Date</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

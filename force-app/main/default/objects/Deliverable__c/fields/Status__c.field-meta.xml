@@ -10,16 +10,6 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Received</fullName>
-                <default>false</default>
-                <label>Received</label>
-            </value>
-            <value>
-                <fullName>Outstanding</fullName>
-                <default>false</default>
-                <label>Outstanding</label>
-            </value>
-            <value>
                 <fullName>Not Started</fullName>
                 <default>false</default>
                 <label>Not Started</label>
@@ -38,6 +28,18 @@
                 <fullName>Cancelled</fullName>
                 <default>false</default>
                 <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>Outstanding</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Outstanding</label>
+            </value>
+            <value>
+                <fullName>Received</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Received</label>
             </value>
         </valueSetDefinition>
     </valueSet>

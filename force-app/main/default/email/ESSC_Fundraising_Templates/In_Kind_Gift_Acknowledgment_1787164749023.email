@@ -1,0 +1,16 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Dear {{{GiftTransaction.Donor_Name__c}}},<br />
+<br />
+Thank you for your generous gift of {{{GiftTransaction.In_Kind_Description__c}}}&nbsp;received on {{{GiftTransaction.TransactionDate}}}.<br />
+<br />
+No goods or services were provided in exchange for this contribution. Please retain this letter for your tax records. Easterseals Southern California did not assign a monetary value to this gift; the donor is responsible for determining fair market value for tax deduction purposes, in accordance with IRS guidelines.<br />
+<br />
+Acknowledged on {{{GiftTransaction.AcknowledgementDate}}}.<br />
+<br />
+With gratitude,<br />
+{{{Sender.FirstName}}} {{{Sender.LastName}}}<br />
+{{{Organization.Name}}}</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>YoY_Award_Change_Percent__c</fullName>
+    <description>YoY Award Change as a percentage of the prior cycle award. The formula multiplies by 100 because a Percent formula field displays whatever it returns with a % sign - it does not scale the result. Blank when there is no prior cycle, either Amount is empty, or the prior award was zero.</description>
+    <formula>IF(
+    OR(
+        ISBLANK(Prior_Cycle_Grant__c),
+        ISBLANK(Amount),
+        ISBLANK(Prior_Cycle_Grant__r.Amount),
+        Prior_Cycle_Grant__r.Amount = 0
+    ),
+    NULL,
+    (Amount - Prior_Cycle_Grant__r.Amount) / Prior_Cycle_Grant__r.Amount * 100
+)</formula>
+    <label>YoY Award Change %</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Percent</type>
+</CustomField>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Relationship_to_ESSC__c</fullName>
+    <label>Relationship to ESSC</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Program Participant</fullName>
+                <default>false</default>
+                <label>Program Participant</label>
+            </value>
+            <value>
+                <fullName>Family/Friend of Participant(s)</fullName>
+                <default>false</default>
+                <label>Family/Friend of Participant(s)</label>
+            </value>
+            <value>
+                <fullName>Employee</fullName>
+                <default>false</default>
+                <label>Employee</label>
+            </value>
+            <value>
+                <fullName>Board Member</fullName>
+                <default>false</default>
+                <label>Board Member</label>
+            </value>
+            <value>
+                <fullName>Organization, Corporation or Foundation</fullName>
+                <default>false</default>
+                <label>Organization, Corporation or Foundation</label>
+            </value>
+            <value>
+                <fullName>Saw Commercial, Billboard, or other</fullName>
+                <default>false</default>
+                <label>Saw Commercial, Billboard, or other</label>
+            </value>
+            <value>
+                <fullName>No direct connection, I support the mission</fullName>
+                <default>false</default>
+                <label>No direct connection, I support the mission</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

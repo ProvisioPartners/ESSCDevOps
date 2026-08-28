@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Max_Ask_Amount__c</fullName>
+    <description>Maximum amount we may request from this funder.</description>
+    <inlineHelpText>Maximum amount we may request from this funder.</inlineHelpText>
+    <label>Max Ask Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Currency</type>
+</CustomField>

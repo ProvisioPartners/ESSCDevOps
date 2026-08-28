@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cost_Center__c</fullName>
+    <description>Cost Center pulled across from the linked Gift Designation (GiftDesignation.Cost_Center__c) so the default coding on a commitment or opportunity is visible without an extra hop. Cross-object formula - no automation, always reflects the current value on the Gift Designation. See docs/grant-reimbursement-rollups.md (GM-019, GM-025).</description>
+    <externalId>false</externalId>
+    <formula>GiftDesignation.Cost_Center__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Cost Center from the linked Gift Designation. Calculated - edit it on the Gift Designation.</inlineHelpText>
+    <label>Cost Center</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

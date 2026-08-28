@@ -1,0 +1,14 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">Thank you for your gift of&nbsp; {{{GiftTransaction.OriginalAmount}}} received on {{{GiftTransaction.TransactionDate}}}&nbsp;, transferred directly from your IRA custodian, [Name of IRA Custodian/Trustee].<br />
+<br />
+This gift qualifies as a Qualified Charitable Distribution under Internal Revenue Code Section 408(d)(8). No goods or services were provided in exchange for this distribution.<br />
+<br />
+Please note that because these funds are excluded directly from your gross income, this contribution is not eligible for a separate charitable tax deduction.<br />
+<br />
+With gratitude,<br />
+{{{Sender.FirstName}}} {{{Sender.LastName}}}<br />
+{{{Organization.Name}}}</body>
+</html>

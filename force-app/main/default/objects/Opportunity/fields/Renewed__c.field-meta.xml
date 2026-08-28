@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Renewed__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Set when this eligible grant has been renewed into a new cycle (typically checked right before cloning to the next year&apos;s grant). Numerator for the Grant Renewal Rate.</description>
+    <inlineHelpText>Check when this grant has been renewed for the next cycle (before cloning).</inlineHelpText>
+    <label>Renewed</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Re_approach_Eligibility_Date__c</fullName>
+    <description>Earliest date ESSC may approach this funder again after a decline, based on the funder&apos;s cooling-off or reapplication rule. Distinct from Next Open Cycle Date, which is when the funder&apos;s next application window opens. Retain this value when Stage is LOI Declined - it is planning data, not a field to clear on loss.</description>
+    <label>Re-approach Eligibility Date</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Interaction_Required</fullName>
+    <active>true</active>
+    <description>Every Interaction Summary must hang off an Interaction, so the Account stamp and the &quot;an interaction happened&quot; signal are always present. Create-only, so existing summaries stay editable.</description>
+    <errorConditionFormula>AND(
+    ISNEW(),
+    ISBLANK(InteractionId)
+)</errorConditionFormula>
+    <errorDisplayField>InteractionId</errorDisplayField>
+    <errorMessage>An Interaction Summary must be linked to an Interaction. Use the Log Interaction action to create both together.</errorMessage>
+</ValidationRule>

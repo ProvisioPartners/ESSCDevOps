@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Expected_to_Date__c</fullName>
+    <description>Total Expected to Date. Sum of Expected Total Commitment Amount (ExpectedTotalCmtAmount) across every Gift Commitment linked to this Opportunity by the standard Opportunity relationship. Maintained by the DLRS roll-up Grant Total Expected to Date (dlrs__LookupRollupSummary2) - it cannot be a native roll-up summary because Gift Commitment is joined to Opportunity by lookup, not master-detail. Do not edit by hand; DLRS overwrites it on the next Gift Commitment change.</description>
+    <inlineHelpText>Total reimbursement expected to date, summed from Expected Total Commitment Amount on this grant&apos;s Gift Commitments. Calculated - do not edit.</inlineHelpText>
+    <label>Total Expected to Date</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

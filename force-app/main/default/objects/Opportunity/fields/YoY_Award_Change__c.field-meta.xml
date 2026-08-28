@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>YoY_Award_Change__c</fullName>
+    <description>This cycle&apos;s Amount minus the Prior Cycle Grant&apos;s Amount. Positive means the funder increased the award. Blank - not zero - when there is no prior cycle or either Amount is empty, so grand totals are not skewed by first-time asks.</description>
+    <formula>IF(
+    OR(
+        ISBLANK(Prior_Cycle_Grant__c),
+        ISBLANK(Amount),
+        ISBLANK(Prior_Cycle_Grant__r.Amount)
+    ),
+    NULL,
+    Amount - Prior_Cycle_Grant__r.Amount
+)</formula>
+    <label>YoY Award Change</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

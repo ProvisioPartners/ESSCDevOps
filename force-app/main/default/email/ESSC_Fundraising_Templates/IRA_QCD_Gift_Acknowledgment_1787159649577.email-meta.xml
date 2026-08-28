@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>IRA/QCD Gift Acknowledgment template — used for donors making Qualified Charitable Distributions per DEV-013.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>IRA/QCD Gift Acknowledgment</name>
+    <relatedEntityType>GiftTransaction</relatedEntityType>
+    <style>none</style>
+    <subject>Thank you for your QCD/IRA charitable gift</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

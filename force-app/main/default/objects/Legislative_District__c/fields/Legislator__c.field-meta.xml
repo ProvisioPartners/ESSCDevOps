@@ -3,6 +3,15 @@
     <fullName>Legislator__c</fullName>
     <deleteConstraint>SetNull</deleteConstraint>
     <label>Legislator</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Account.IsPersonAccount</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
     <referenceTo>Account</referenceTo>
     <relationshipLabel>Legislative Districts</relationshipLabel>
     <relationshipName>Legislative_Districts</relationshipName>

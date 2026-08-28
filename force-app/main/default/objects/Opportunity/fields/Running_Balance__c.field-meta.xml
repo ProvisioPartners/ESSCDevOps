@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Running_Balance__c</fullName>
+    <description>Running Balance = Total Expected to Date - Total Received to Date: the reimbursement still outstanding across this grant&apos;s Gift Commitments. Formula - not editable. Both operands are maintained by DLRS roll-ups, so this moves whenever either total is recalculated.</description>
+    <formula>Total_Expected_to_Date__c - Total_Received_to_Date__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Reimbursement still outstanding: Total Expected to Date minus Total Received to Date. Calculated - do not edit.</inlineHelpText>
+    <label>Running Balance</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

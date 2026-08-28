@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Refunded__c</fullName>
+    <description>Total Refunded. Sum of the standard Refunded Amount (RefundedAmount) across every Gift Transaction under this Gift Commitment - i.e. funds returned to the funder (unspent, disallowed, or clawed-back award money) recorded as Gift Refund records. Maintained by the DLRS roll-up Grant Commitment Total Refunded. Cannot be a native roll-up summary because Gift Transaction is joined to Gift Commitment by lookup, not master-detail. Do not edit by hand. See docs/grant-reimbursement-rollups.md.</description>
+    <inlineHelpText>Funds returned to the funder, totalled from the Refunded Amount on this commitment&apos;s Gift Transactions. Calculated - do not edit.</inlineHelpText>
+    <label>Total Refunded</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

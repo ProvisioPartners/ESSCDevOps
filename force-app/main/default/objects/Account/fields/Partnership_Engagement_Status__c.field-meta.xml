@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Partnership_Engagement_Status__c</fullName>
+    <inlineHelpText>Indicates how actively this partner engages with us, per Partnerships&apos; color criteria:
+Red: Cold prospect. No interactions or engagement have occurred, or past engagement has ceased.
+Yellow: Communicated at some point. Has expressed interest in partnership, or we&apos;re waiting to reach back out.
+Blue: Communicating with us regularly, based on need. Engaged with us in a specific, defined way.
+Green: Consistently communicating with us. Engaged with us in multiple ways.</inlineHelpText>
+    <label>Partnership Engagement Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Red</fullName>
+                <default>false</default>
+                <label>Red</label>
+            </value>
+            <value>
+                <fullName>Yellow</fullName>
+                <default>false</default>
+                <label>Yellow</label>
+            </value>
+            <value>
+                <fullName>Blue</fullName>
+                <default>false</default>
+                <label>Blue</label>
+            </value>
+            <value>
+                <fullName>Green</fullName>
+                <default>false</default>
+                <label>Green</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

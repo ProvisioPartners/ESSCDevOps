@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Government Relations staff access, including the app, standard and custom data, interactions, action plans, relationship tools, and Action Launcher.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Government Relations Staff</label>
+    <mutingPermissionSets>GR_Staff_Gift_Grant_Restrictions</mutingPermissionSets>
+    <permissionSets>Actionable_Relationship_Center</permissionSets>
+    <permissionSets>ESSC_Gov_Relations_Application_Access</permissionSets>
+    <permissionSets>ESSC_Standard_System_Permissions</permissionSets>
+    <permissionSets>Gov_Relations_Custom_Object_Field_Access</permissionSets>
+    <permissionSets>Standard_Object_Field_Permissions</permissionSets>
+    <permissionSets>force__ActionPlans</permissionSets>
+    <permissionSets>force__GroupMembershipPsl</permissionSets>
+    <permissionSets>force__IndustriesInteractionSummaryPsl</permissionSets>
+    <permissionSets>force__IndustriesServiceExcellence</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

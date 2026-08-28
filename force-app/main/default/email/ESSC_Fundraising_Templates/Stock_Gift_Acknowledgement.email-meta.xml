@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>PLACEHOLDER WORDING — built so QA can exercise the end-to-end stock gift flow. Client copy is outstanding and will replace the body text; the merge fields are the deliverable.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Stock Gift Acknowledgment</name>
+    <relatedEntityType>GiftTransaction</relatedEntityType>
+    <style>none</style>
+    <subject>Thank you for your gift of {{{GiftTransaction.Stock_Ticker__c}}} stock</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

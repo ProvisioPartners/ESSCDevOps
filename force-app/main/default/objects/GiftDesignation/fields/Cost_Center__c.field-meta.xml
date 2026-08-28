@@ -4,7 +4,7 @@
     <externalId>false</externalId>
     <inlineHelpText>General ledger cost center this designation is attributed to. Applied to every Gift Transaction Designation that points at this designation.</inlineHelpText>
     <label>Cost Center</label>
-    <length>40</length>
+    <length>255</length>
     <required>false</required>
     <trackHistory>false</trackHistory>
     <type>Text</type>
