@@ -7,10 +7,6 @@
         <default>false</default>
     </values>
     <values>
-        <fullName>Closed - Complete</fullName>
-        <default>false</default>
-    </values>
-    <values>
         <fullName>Closed Lost</fullName>
         <default>false</default>
     </values>

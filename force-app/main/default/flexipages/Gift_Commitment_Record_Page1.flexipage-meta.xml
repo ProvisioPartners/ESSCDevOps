@@ -459,6 +459,16 @@
                 <identifier>RecordTotExpcAssetTransferValField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Total_Refunded__c</fieldItem>
+                <identifier>RecordTotal_Refunded_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-d0b3f9a5-8a06-4d46-8fda-fe14f4ab697f</name>
         <type>Facet</type>
     </flexiPageRegions>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>GiftCommitment$Name</field>
+    </columns>
+    <columns>
+        <field>GiftCommitment$Donor.Name</field>
+    </columns>
+    <columns>
+        <field>GiftCommitment$Status</field>
+    </columns>
+    <columns>
+        <field>GiftCommitment$Opportunity.Name</field>
+    </columns>
+    <columns>
+        <field>GiftCommitment$ScheduleType</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>GiftCommitment$ExpectedTotalCmtAmount</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>GiftCommitment$TotalPaidTransactionAmount</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CDF1</field>
+    </columns>
+    <columns>
+        <field>GiftCommitment$EffectiveStartDate</field>
+    </columns>
+    <columns>
+        <field>GiftCommitment$ExpectedEndDate</field>
+    </columns>
+    <columns>
+        <field>GiftCommitment$LastPaidTransactionDate</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>GiftCommitment$NextTransactionAmount</field>
+    </columns>
+    <columns>
+        <field>GiftCommitment$NextTransactionDate</field>
+    </columns>
+    <columns>
+        <field>GiftCommitment$RecurrenceType</field>
+    </columns>
+    <columns>
+        <field>GiftCommitment$CurrentGiftCmtSchedule.OutreachSourceCode</field>
+    </columns>
+    <columns>
+        <field>GiftCommitment$CurrentGiftCmtSchedule.TransactionPeriod</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>GiftCommitment$CurrentGiftCmtSchedule.TransactionInterval</field>
+    </columns>
+    <columns>
+        <field>GiftCommitment$Campaign.Name</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>BLANKVALUE(GiftCommitment.ExpectedTotalCmtAmount,0) - BLANKVALUE(GiftCommitment.TotalPaidTransactionAmount,0)</calculatedFormula>
+        <dataType>Double</dataType>
+        <description>Expected Total Commitment Amount - Total Paid Transaction Amount</description>
+        <developerName>CDF1</developerName>
+        <label>Total Unpaid Amount</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <description>Which Major Gifts, Recurring Donations, Planned Gifts, and Grants have been committed? A list of all Gift Commitment records.</description>
+    <format>Tabular</format>
+    <name>All Gift Commitments</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Gift_Commitments_Deluxe__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>GiftCommitment$EffectiveStartDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

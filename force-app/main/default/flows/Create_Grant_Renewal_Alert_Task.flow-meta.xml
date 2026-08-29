@@ -32,7 +32,7 @@
             <assignToReference>Task_Record.ActivityDate</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>Loop_Build.Grant_End_Date__c</elementReference>
+                <elementReference>Loop_Build.End_Date__c</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -224,7 +224,7 @@
     <formulas>
         <name>Task_Description</name>
         <dataType>String</dataType>
-        <expression>&quot;This grant ends on &quot; &amp; TEXT({!Loop_Build.Grant_End_Date__c}) &amp; &quot; (&quot; &amp; TEXT({!Offset_Months}) &amp; &quot; months out). Review it and start the renewal for the next cycle.&quot;</expression>
+        <expression>&quot;This grant ends on &quot; &amp; TEXT({!Loop_Build.End_Date__c}) &amp; &quot; (&quot; &amp; TEXT({!Offset_Months}) &amp; &quot; months out). Review it and start the renewal for the next cycle.&quot;</expression>
     </formulas>
     <formulas>
         <name>Task_Subject</name>
@@ -333,7 +333,7 @@
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>Grant_End_Date__c</field>
+            <field>End_Date__c</field>
             <operator>EqualTo</operator>
             <value>
                 <elementReference>Target_Date</elementReference>

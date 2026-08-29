@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>InteractionSummary</baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Interaction summaries with account issue area, district, and type.</description>
+    <label>Interaction Summaries with Accounts</label>
+    <sections>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
+            <table>InteractionSummary</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Account.Name</field>
+            <table>InteractionSummary</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Account.Issue_Area__c</field>
+            <table>InteractionSummary</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Account.Legislative_District__c</field>
+            <table>InteractionSummary</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Interaction.InteractionType</field>
+            <table>InteractionSummary</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Interaction.StartTime</field>
+            <table>InteractionSummary</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Account.Legislator__c</field>
+            <table>InteractionSummary</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>InteractionPurpose</field>
+            <table>InteractionSummary</table>
+        </columns>
+        <masterLabel>Interaction Summaries</masterLabel>
+    </sections>
+</ReportType>

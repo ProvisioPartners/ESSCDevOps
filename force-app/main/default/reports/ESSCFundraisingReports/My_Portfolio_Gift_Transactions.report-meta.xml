@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Relationship_Manager_Development__c</field>
+    </columns>
+    <columns>
+        <field>Account$Relationship_Manager_Grants__c</field>
+    </columns>
+    <columns>
+        <field>Account$Relationship_Manager_Partnerships__c</field>
+    </columns>
+    <columns>
+        <field>Account$Last_Touch_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.GiftTransaction$TransactionDate</field>
+    </columns>
+    <columns>
+        <field>Account.GiftTransaction$GiftType</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.GiftTransaction$CurrentAmount</field>
+    </columns>
+    <description>Gift transactions for each Relationship Manager&apos;s assigned portfolio. Scoped to the running user via My Portfolio = True (RM on any team field). Baseline column set - exact fields to be confirmed with the client.</description>
+    <filter>
+        <criteriaItems>
+            <column>Account$My_Portfolio__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>My Portfolio - Gift Transactions</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Gift_Transactions_Related_To_Accounts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.GiftTransaction$AcknowledgementDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

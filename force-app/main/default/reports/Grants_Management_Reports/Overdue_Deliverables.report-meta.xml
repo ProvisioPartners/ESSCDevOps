@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Deliverable__c$Name</field>
+    </columns>
+    <columns>
+        <field>Deliverable__c$Deliverable_Name__c</field>
+    </columns>
+    <columns>
+        <field>Deliverable__c$Type__c</field>
+    </columns>
+    <columns>
+        <field>Deliverable__c$Status__c</field>
+    </columns>
+    <columns>
+        <field>Deliverable__c$Due_Date__c</field>
+    </columns>
+    <description>Deliverables that are past due (Due Date before today) and not yet complete. Source for the Overdue Deliverables list on the Grant Pipeline Dashboard.</description>
+    <filter>
+        <criteriaItems>
+            <column>Deliverable__c$Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Completed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Deliverable__c$Due_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessThan</operator>
+            <value>TODAY</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Deliverable__c$Opportunity__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Overdue Deliverables</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Deliverables__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Deliverable__c$Due_Date__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Deliverable__c$Due_Date__c</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

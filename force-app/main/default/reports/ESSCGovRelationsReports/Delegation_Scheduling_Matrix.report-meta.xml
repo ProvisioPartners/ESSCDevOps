@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Campaign.CampaignMembers$Name</field>
+    </columns>
+    <columns>
+        <field>Campaign.CampaignMembers*CampaignMember$Role__c</field>
+    </columns>
+    <columns>
+        <field>Campaign.CampaignMembers$Email</field>
+    </columns>
+    <columns>
+        <field>Campaign.CampaignMembers$Status</field>
+    </columns>
+    <columns>
+        <field>Campaign$Issue_Area__c</field>
+    </columns>
+    <columns>
+        <field>Campaign$Legislative_District__c</field>
+    </columns>
+    <description>ESSC attendees grouped by campaign and attendee district, including the campaign target district and issue area. Export to Excel for scheduling.</description>
+    <filter>
+        <criteriaItems>
+            <column>Campaign.CampaignMembers*CampaignMember$Role__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>ESSC Attendee</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Campaign$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Campaign.CampaignMembers$Contact.Account.Legislative_District__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Delegation Scheduling Matrix</name>
+    <params>
+        <name>scopeid</name>
+        <value></value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Campaigns_with_Campaign_Members__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Campaign$StartDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

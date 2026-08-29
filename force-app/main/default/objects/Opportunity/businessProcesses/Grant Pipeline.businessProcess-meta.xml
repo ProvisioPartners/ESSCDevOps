@@ -4,6 +4,10 @@
     <description>Stage path for Foundation Grant and Government Grant Record Types</description>
     <isActive>true</isActive>
     <values>
+        <fullName>Ask</fullName>
+        <default>false</default>
+    </values>
+    <values>
         <fullName>Awarded - Active</fullName>
         <default>false</default>
     </values>
