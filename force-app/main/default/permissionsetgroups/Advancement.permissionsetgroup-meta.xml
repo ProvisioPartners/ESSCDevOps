@@ -2,6 +2,7 @@
 <PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
     <hasActivationRequired>false</hasActivationRequired>
     <label>Advancement</label>
+    <permissionSets>Action_Plan_Template_Management</permissionSets>
     <permissionSets>Actionable_Relationship_Center</permissionSets>
     <permissionSets>ESSC_Data_Manager</permissionSets>
     <permissionSets>ESSC_Fundraising_Application_Access</permissionSets>

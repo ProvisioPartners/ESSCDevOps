@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Layout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <excludeButtons>OpenSlackRecordChannel</excludeButtons>
     <excludeButtons>Share</excludeButtons>
     <layoutSections>
         <customLabel>false</customLabel>
@@ -27,6 +26,14 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Government_Level__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Legislative_District__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Issue_Area__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
@@ -282,6 +289,36 @@
         </relatedContentItems>
     </relatedContent>
     <relatedLists>
+        <fields>Name</fields>
+        <fields>Donor</fields>
+        <fields>Status</fields>
+        <fields>FormalCommitmentType</fields>
+        <fields>ExpectedTotalCmtAmount</fields>
+        <fields>TotalPaidTransactio846</fields>
+        <fields>EffectiveStartDate</fields>
+        <fields>ExpectedEndDate</fields>
+        <relatedList>GiftCommitments</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>GiftDesignation</fields>
+        <fields>AllocatedPercentage</fields>
+        <relatedList>GiftDefaultDesignationParentRecords</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>Name</fields>
+        <fields>Donor</fields>
+        <fields>CurrentAmount</fields>
+        <fields>TransactionDate</fields>
+        <fields>Status</fields>
+        <relatedList>GiftTransactions</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>Name</fields>
+        <fields>Status</fields>
+        <fields>SourceCode</fields>
+        <relatedList>OutreachSourceCodes</relatedList>
+    </relatedLists>
+    <relatedLists>
         <relatedList>RelatedFileList</relatedList>
     </relatedLists>
     <relatedLists>
@@ -315,6 +352,23 @@
     </relatedLists>
     <relatedLists>
         <relatedList>RelatedContentNoteList</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>Name</fields>
+        <fields>LastModifiedDate</fields>
+        <fields>LastModifiedBy</fields>
+        <fields>Account</fields>
+        <fields>Location</fields>
+        <relatedList>Interaction.Campaign__c</relatedList>
+    </relatedLists>
+    <relatedLists>
+        <fields>Name</fields>
+        <fields>LastModifiedDate</fields>
+        <fields>LastModifiedBy</fields>
+        <fields>Account</fields>
+        <fields>Interaction</fields>
+        <fields>PartnerAccount</fields>
+        <relatedList>InteractionSummary.Campaign__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>

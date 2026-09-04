@@ -3,6 +3,7 @@
     <hasActivationRequired>false</hasActivationRequired>
     <label>Foundations &amp; Grants Director</label>
     <mutingPermissionSets>NPC_Delete_Mute</mutingPermissionSets>
+    <permissionSets>Action_Plan_Template_Management</permissionSets>
     <permissionSets>Actionable_Relationship_Center</permissionSets>
     <permissionSets>ESSC_Fundraising_Application_Access</permissionSets>
     <permissionSets>ESSC_Grants_Application_Access</permissionSets>

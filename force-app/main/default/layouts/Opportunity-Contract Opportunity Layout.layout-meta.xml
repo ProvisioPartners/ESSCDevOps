@@ -53,6 +53,14 @@
                 <behavior>Edit</behavior>
                 <field>Description</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Open_Deliverables__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>CampaignId</field>
+            </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
@@ -199,69 +207,64 @@
             <sortOrder>25</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>AutomatedDealTrackingReviewModal</actionName>
+            <actionName>AssignRecordLabel</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>26</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>AssignRecordLabel</actionName>
+            <actionName>SalesAIRelationshipGraph</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>27</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>SalesAIRelationshipGraph</actionName>
+            <actionName>SendSurveyInvitation</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>28</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>SendSurveyInvitation</actionName>
+            <actionName>Delete</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>29</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>Delete</actionName>
+            <actionName>NewSampleManagement</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>30</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>NewSampleManagement</actionName>
+            <actionName>PrintableView</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>31</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>PrintableView</actionName>
+            <actionName>BookTestDrive</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>32</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>BookTestDrive</actionName>
+            <actionName>ChangeOwnerOne</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>33</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>ChangeOwnerOne</actionName>
+            <actionName>Clone</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>34</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>Clone</actionName>
+            <actionName>GenerateInvoice</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>35</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>GenerateInvoice</actionName>
+            <actionName>StartOutboundConversation</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>36</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
-            <actionName>StartOutboundConversation</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>37</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
             <actionName>Opportunity.Clone_Deliverables</actionName>
             <actionType>QuickAction</actionType>
-            <sortOrder>38</sortOrder>
+            <sortOrder>37</sortOrder>
         </platformActionListItems>
     </platformActionList>
     <relatedContent>
@@ -354,7 +357,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00hWK000003vUPR</masterLabel>
+        <masterLabel>00hWJ000007KNr0</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

@@ -119,6 +119,78 @@ Grants Organization Account Record Page</description>
                 <identifier>force_highlightsPanel</identifier>
             </componentInstance>
         </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>actionNames</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>New</value>
+                        </valueListItems>
+                    </valueList>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>maxRecordsToDisplay</name>
+                    <value>10</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>parentFieldApiName</name>
+                    <value>Account.Id</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListApiName</name>
+                    <value>AARAccounts</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListDisplayType</name>
+                    <value>ADVGRID</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListFieldAliases</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>Name</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Account</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>RelatedAccount</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>PartyRoleRelation</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>StartDate</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>EndDate</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>IsActive</value>
+                        </valueListItems>
+                    </valueList>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListLabel</name>
+                    <value>Related Accounts</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sortFieldAlias</name>
+                    <value>__DEFAULT__</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sortFieldOrder</name>
+                    <value>Default</value>
+                </componentInstanceProperties>
+                <componentName>lst:dynamicRelatedList</componentName>
+                <identifier>lst_dynamicRelatedList5</identifier>
+            </componentInstance>
+        </itemInstances>
         <name>header</name>
         <type>Region</type>
     </flexiPageRegions>
@@ -169,6 +241,16 @@ Grants Organization Account Record Page</description>
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
+                <fieldItem>Record.Sub_Type__c</fieldItem>
+                <identifier>RecordSub_Type_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
                 <fieldItem>Record.Government_Level__c</fieldItem>
                 <identifier>RecordGovernment_Level_cField</identifier>
             </fieldInstance>
@@ -191,16 +273,6 @@ Grants Organization Account Record Page</description>
                 </fieldInstanceProperties>
                 <fieldItem>Record.AnnualRevenue</fieldItem>
                 <identifier>RecordAnnualRevenueField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Legacy_ID__c</fieldItem>
-                <identifier>RecordLegacy_ID__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-c75d1de4-2d68-41ab-a87d-e201537b8af2</name>
@@ -526,29 +598,70 @@ Grants Organization Account Record Page</description>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>displayLastUpdated</name>
-                    <value>false</value>
+                    <name>actionNames</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>New</value>
+                        </valueListItems>
+                    </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
-                    <name>enableEditCreate</name>
-                    <value>false</value>
+                    <name>adminFilters</name>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
-                    <name>groups</name>
-                    <value>[{&quot;groupName&quot;:&quot;Summary Data&quot;,&quot;index&quot;:1,&quot;allFields&quot;:[{&quot;value&quot;:&quot;GivingLevel&quot;},{&quot;value&quot;:&quot;TotalBookableRevenue&quot;},{&quot;value&quot;:&quot;BookedPledges&quot;},{&quot;value&quot;:&quot;GiftCount&quot;},{&quot;value&quot;:&quot;TotalGiftsAmount&quot;},{&quot;value&quot;:&quot;TotalPaidRcrInstlAmt&quot;},{&quot;value&quot;:&quot;TotalPaidRcrInstallments&quot;}]}]</value>
+                    <name>maxRecordsToDisplay</name>
+                    <value>10</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
-                    <name>panelName</name>
-                    <value>Giving Summary</value>
+                    <name>parentFieldApiName</name>
+                    <value>Account.Id</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
-                    <name>relatedEntity</name>
-                    <value>DonorGiftSummary:DonorId</value>
+                    <name>relatedListApiName</name>
+                    <value>Portals__r</value>
                 </componentInstanceProperties>
-                <componentName>runtime_industries_fundraising:relatedRecordDetailDisplay</componentName>
-                <identifier>runtime_industries_fundraising_relatedRecordDetailDisplay</identifier>
+                <componentInstanceProperties>
+                    <name>relatedListDisplayType</name>
+                    <value>ADVGRID</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListFieldAliases</name>
+                    <valueList>
+                        <valueListItems>
+                            <value>NAME</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Portal_Type__c</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>URL__c</value>
+                        </valueListItems>
+                    </valueList>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>relatedListLabel</name>
+                    <value>Portals</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showActionBar</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sortFieldAlias</name>
+                    <value>__DEFAULT__</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>sortFieldOrder</name>
+                    <value>Default</value>
+                </componentInstanceProperties>
+                <componentName>lst:dynamicRelatedList</componentName>
+                <identifier>lst_dynamicRelatedList6</identifier>
             </componentInstance>
         </itemInstances>
+        <name>Facet-d2be0100-6af7-4716-97f4-d553c3aec0ae</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
@@ -686,75 +799,6 @@ Grants Organization Account Record Page</description>
                 </componentInstanceProperties>
                 <componentName>lst:dynamicRelatedList</componentName>
                 <identifier>lst_dynamicRelatedList3</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>actionNames</name>
-                    <valueList>
-                        <valueListItems>
-                            <value>New</value>
-                        </valueListItems>
-                    </valueList>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>adminFilters</name>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>maxRecordsToDisplay</name>
-                    <value>10</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>parentFieldApiName</name>
-                    <value>Account.Id</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListApiName</name>
-                    <value>GiftCommitments</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListDisplayType</name>
-                    <value>ADVGRID</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListFieldAliases</name>
-                    <valueList>
-                        <valueListItems>
-                            <value>Name</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>Status</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>ExpectedTotalCmtAmount</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>TotalPaidTransactio846</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>ExpectedEndDate</value>
-                        </valueListItems>
-                    </valueList>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>relatedListLabel</name>
-                    <value>Gift Commitments</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>showActionBar</name>
-                    <value>true</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>sortFieldAlias</name>
-                    <value>__DEFAULT__</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>sortFieldOrder</name>
-                    <value>Default</value>
-                </componentInstanceProperties>
-                <componentName>lst:dynamicRelatedList</componentName>
-                <identifier>lst_dynamicRelatedList5</identifier>
             </componentInstance>
         </itemInstances>
         <name>Facet-6c6c6n5bicf</name>
@@ -897,6 +941,20 @@ Grants Organization Account Record Page</description>
             <componentInstance>
                 <componentInstanceProperties>
                     <name>body</name>
+                    <value>Facet-d2be0100-6af7-4716-97f4-d553c3aec0ae</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                    <value>Portals</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tab</componentName>
+                <identifier>flexipage_tab3</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>body</name>
                     <value>Facet-6c6c6n5bicf</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
@@ -946,30 +1004,6 @@ Grants Organization Account Record Page</description>
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>hideHeader</name>
-                    <value>false</value>
-                </componentInstanceProperties>
-                <componentName>force:relatedListQuickLinksContainer</componentName>
-                <identifier>force_relatedListQuickLinksContainer</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>label</name>
-                    <value>Tabs</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>tabs</name>
-                    <value>Facet-4001a7bf-6de4-43c3-9ad5-6aa057bd7cb3</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:tabset</componentName>
-                <identifier>flexipage_tabset</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
                     <name>actionNames</name>
                     <valueList>
                         <valueListItems>
@@ -990,7 +1024,7 @@ Grants Organization Account Record Page</description>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>relatedListApiName</name>
-                    <value>GiftTransactions</value>
+                    <value>ConstituentRolesInstitution</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>relatedListDisplayType</name>
@@ -1003,22 +1037,25 @@ Grants Organization Account Record Page</description>
                             <value>Name</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>CurrentAmount</value>
+                            <value>Person</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>TransactionDueDate</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>TransactionDate</value>
+                            <value>RoleType</value>
                         </valueListItems>
                         <valueListItems>
                             <value>Status</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>EffectiveStartDate</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>EffectiveEndDate</value>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>relatedListLabel</name>
-                    <value>Gift Transactions</value>
+                    <value>Constituent Roles</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>showActionBar</name>
@@ -1033,7 +1070,48 @@ Grants Organization Account Record Page</description>
                     <value>Default</value>
                 </componentInstanceProperties>
                 <componentName>lst:dynamicRelatedList</componentName>
-                <identifier>lst_dynamicRelatedList6</identifier>
+                <identifier>lst_dynamicRelatedList7</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>hideHeader</name>
+                    <value>false</value>
+                </componentInstanceProperties>
+                <componentName>force:relatedListQuickLinksContainer</componentName>
+                <identifier>force_relatedListQuickLinksContainer</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>configuration</name>
+                    <value>DEPLOYMENT</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>deploymentId</name>
+                    <value>GovRelationsActions</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>title</name>
+                </componentInstanceProperties>
+                <componentName>industries_service_excellence:actionLauncher</componentName>
+                <identifier>industries_service_excellence_actionLauncher</identifier>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>label</name>
+                    <value>Tabs</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>tabs</name>
+                    <value>Facet-4001a7bf-6de4-43c3-9ad5-6aa057bd7cb3</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:tabset</componentName>
+                <identifier>flexipage_tabset</identifier>
             </componentInstance>
         </itemInstances>
         <name>main</name>

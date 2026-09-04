@@ -375,6 +375,7 @@
         <queriedFields>Name</queriedFields>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
+    <runInMode>SystemModeWithoutSharing</runInMode>
     <screens>
         <name>Error_Screen</name>
         <label>Error Screen</label>

@@ -194,6 +194,16 @@
                 <identifier>RecordCloseDateField</identifier>
             </fieldInstance>
         </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldInstanceProperties>
+                    <name>uiBehavior</name>
+                    <value>none</value>
+                </fieldInstanceProperties>
+                <fieldItem>Record.Open_Deliverables__c</fieldItem>
+                <identifier>RecordOpen_Deliverables_cField</identifier>
+            </fieldInstance>
+        </itemInstances>
         <name>Facet-29b0cc47-951a-40b2-9af1-a61c8086d677</name>
         <type>Facet</type>
     </flexiPageRegions>
