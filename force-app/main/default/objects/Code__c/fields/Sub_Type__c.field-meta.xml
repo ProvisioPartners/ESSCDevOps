@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Type__c</fullName>
+    <label>Sub-Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>CCS Top 350</fullName>
+                <default>false</default>
+                <label>CCS Top 350</label>
+            </value>
+            <value>
+                <fullName>Camp</fullName>
+                <default>false</default>
+                <label>Camp</label>
+            </value>
+            <value>
+                <fullName>Estate/Trust</fullName>
+                <default>false</default>
+                <label>Estate/Trust</label>
+            </value>
+            <value>
+                <fullName>Organization</fullName>
+                <default>false</default>
+                <label>Organization</label>
+            </value>
+            <value>
+                <fullName>Easter Seals Staff</fullName>
+                <default>false</default>
+                <label>Easter Seals Staff</label>
+            </value>
+            <value>
+                <fullName>Planned Giving Prospect</fullName>
+                <default>false</default>
+                <label>Planned Giving Prospect</label>
+            </value>
+            <value>
+                <fullName>Donor Advised Fund</fullName>
+                <default>false</default>
+                <label>Donor Advised Fund</label>
+            </value>
+            <value>
+                <fullName>Foundation</fullName>
+                <default>false</default>
+                <label>Foundation</label>
+            </value>
+            <value>
+                <fullName>Southern CA - Current Board Member</fullName>
+                <default>false</default>
+                <label>Southern CA - Current Board Member</label>
+            </value>
+            <value>
+                <fullName>Friend</fullName>
+                <default>false</default>
+                <label>Friend</label>
+            </value>
+            <value>
+                <fullName>Top 20 Prospect</fullName>
+                <default>false</default>
+                <label>Top 20 Prospect</label>
+            </value>
+            <value>
+                <fullName>Legacy Society Member Active</fullName>
+                <default>false</default>
+                <label>Legacy Society Member Active</label>
+            </value>
+            <value>
+                <fullName>Government</fullName>
+                <default>false</default>
+                <label>Government</label>
+            </value>
+            <value>
+                <fullName>Corporate Foundation</fullName>
+                <default>false</default>
+                <label>Corporate Foundation</label>
+            </value>
+            <value>
+                <fullName>Southern CA - Alumni Board Member</fullName>
+                <default>false</default>
+                <label>Southern CA - Alumni Board Member</label>
+            </value>
+            <value>
+                <fullName>National Board Member</fullName>
+                <default>false</default>
+                <label>National Board Member</label>
+            </value>
+            <value>
+                <fullName>Participant Family</fullName>
+                <default>false</default>
+                <label>Participant Family</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

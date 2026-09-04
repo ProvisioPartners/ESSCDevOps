@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Solicit_Code__c</fullName>
+    <label>Solicit Code</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Do Not Solicit</fullName>
+                <default>false</default>
+                <label>Do Not Solicit</label>
+            </value>
+            <value>
+                <fullName>No Email Appeals</fullName>
+                <default>false</default>
+                <label>No Email Appeals</label>
+            </value>
+            <value>
+                <fullName>No Further Contact</fullName>
+                <default>false</default>
+                <label>No Further Contact</label>
+            </value>
+            <value>
+                <fullName>No Invitation Mailings</fullName>
+                <default>false</default>
+                <label>No Invitation Mailings</label>
+            </value>
+            <value>
+                <fullName>No Mail Appeals</fullName>
+                <default>false</default>
+                <label>No Mail Appeals</label>
+            </value>
+            <value>
+                <fullName>Do Not Mail - Constituent Request</fullName>
+                <default>false</default>
+                <label>Do Not Mail - Constituent Request</label>
+            </value>
+            <value>
+                <fullName>No Telephone Appeals</fullName>
+                <default>false</default>
+                <label>No Telephone Appeals</label>
+            </value>
+            <value>
+                <fullName>One Mailer Per Year</fullName>
+                <default>false</default>
+                <label>One Mailer Per Year</label>
+            </value>
+            <value>
+                <fullName>Newsletter</fullName>
+                <default>false</default>
+                <label>Newsletter</label>
+            </value>
+            <value>
+                <fullName>No Recognition</fullName>
+                <default>false</default>
+                <label>No Recognition</label>
+            </value>
+            <value>
+                <fullName>No Planned Giving Communication</fullName>
+                <default>false</default>
+                <label>No Planned Giving Communication</label>
+            </value>
+            <value>
+                <fullName>CP Newsletter</fullName>
+                <default>false</default>
+                <label>CP Newsletter</label>
+            </value>
+            <value>
+                <fullName>DNC w/o checking w/ Mark Whitley first</fullName>
+                <default>false</default>
+                <label>DNC w/o checking w/ Mark Whitley first</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
