@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GL_Payout_Date__c</fullName>
+    <description>Payout / settled-funds date. Sourced from the parent Gift Transaction Grant Payment Date (populated for grants; blank for other gift types until a settlement date is captured).</description>
+    <formula>GiftTransaction.Grant_Payment_Date__c</formula>
+    <label>Payout Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

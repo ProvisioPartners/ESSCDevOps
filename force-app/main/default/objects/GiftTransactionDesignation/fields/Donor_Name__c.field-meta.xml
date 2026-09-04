@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Donor_Name__c</fullName>
+    <description>Donor/funder name from the parent Gift Transaction, surfaced on the designation line so each GL line row stands alone in the monthly Accounting export.</description>
+    <externalId>false</externalId>
+    <formula>GiftTransaction.Donor_Name__c</formula>
+    <label>Donor Name</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

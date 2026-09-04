@@ -26,6 +26,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>GiftTransaction.AcknowledgementStatus</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>GiftTransaction.In_Kind_Description__c</field>
         <readable>true</readable>
     </fieldPermissions>

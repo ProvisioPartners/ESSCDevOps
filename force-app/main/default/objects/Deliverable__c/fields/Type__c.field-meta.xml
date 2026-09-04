@@ -29,6 +29,26 @@
                 <default>false</default>
                 <label>Activations</label>
             </value>
+            <value>
+                <fullName>Progress Report</fullName>
+                <default>false</default>
+                <label>Progress Report</label>
+            </value>
+            <value>
+                <fullName>Financial Report</fullName>
+                <default>false</default>
+                <label>Financial Report</label>
+            </value>
+            <value>
+                <fullName>Program Metrics</fullName>
+                <default>false</default>
+                <label>Program Metrics</label>
+            </value>
+            <value>
+                <fullName>Site Visit</fullName>
+                <default>false</default>
+                <label>Site Visit</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>

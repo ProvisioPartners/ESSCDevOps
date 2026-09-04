@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Method__c</fullName>
+    <description>Payment Method of the parent Gift Transaction (as text), surfaced on the designation line for the monthly Accounting export.</description>
+    <externalId>false</externalId>
+    <formula>TEXT(GiftTransaction.PaymentMethod)</formula>
+    <label>Payment Method</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

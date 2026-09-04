@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Total_Award_Paid__c</fullName>
-    <description>Sum of Grant Period Amount across every Gift Transaction under this grant&apos;s Gift Commitment whose Grant Period Status is Received. Maintained by the Roll Up Government Grant Award Paid flow - it cannot be a native roll-up summary because Gift Transactions are children of the Gift Commitment, not of the Opportunity. Do not edit by hand; the next transaction save overwrites it.</description>
+    <description>Reimbursements received to date on this grant. Maintained by the DLRS roll-up Total_Award_Paid (dlrs__LookupRollupSummary2), which sums Received Gift Transaction Total (Received_Gift_Transaction_Total__c) across every Gift Commitment linked to this Opportunity. That commitment field is itself a DLRS roll-up (Received_Gift_Transaction_Total) summing OriginalAmount on its Gift Transactions. A native roll-up summary is not possible because Gift Transactions are children of the Gift Commitment, not of the Opportunity. Do not edit by hand; the next roll-up recalculation overwrites it. See docs/grant-reimbursement-rollups.md.</description>
     <inlineHelpText>Reimbursements received to date, totalled from the Gift Transactions under this grant&apos;s Gift Commitment. Calculated - do not edit.</inlineHelpText>
     <label>Total Award Paid</label>
     <precision>18</precision>

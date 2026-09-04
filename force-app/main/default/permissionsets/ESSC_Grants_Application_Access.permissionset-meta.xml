@@ -21,4 +21,8 @@
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>ESSC Grants Application Access</label>
+    <tabSettings>
+        <tab>standard-home</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
 </PermissionSet>

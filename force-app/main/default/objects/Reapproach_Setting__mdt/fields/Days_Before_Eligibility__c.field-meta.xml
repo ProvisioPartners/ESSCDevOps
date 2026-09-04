@@ -3,7 +3,7 @@
     <fullName>Days_Before_Eligibility__c</fullName>
     <description>How many days before an Opportunity&apos;s Re-approach Eligibility Date the reminder Task should be created. 0 = create it on the eligibility date itself; 30 = create it 30 days ahead. Read at runtime by the Create Re-approach Task scheduled flow, so changing this record changes the lead time with no flow edit.</description>
     <externalId>false</externalId>
-    <fieldManageability>DeveloperControlled</fieldManageability>
+    <fieldManageability>SubscriberControlled</fieldManageability>
     <inlineHelpText>Days before the Re-approach Eligibility Date to create the reminder Task. 0 = on the date itself.</inlineHelpText>
     <label>Days Before Eligibility</label>
     <precision>4</precision>

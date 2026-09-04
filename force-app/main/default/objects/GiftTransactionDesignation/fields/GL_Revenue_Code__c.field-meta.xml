@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GL_Revenue_Code__c</fullName>
+    <description>General ledger revenue code from the Gift Designation (fund) this line posts to, surfaced on the line for the monthly Accounting export.</description>
+    <externalId>false</externalId>
+    <formula>GiftDesignation.Revenue_Code__c</formula>
+    <label>Revenue Code</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

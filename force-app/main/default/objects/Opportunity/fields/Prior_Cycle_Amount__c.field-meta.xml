@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prior_Cycle_Amount__c</fullName>
+    <description>Amount awarded on the Prior Cycle Grant, pulled across the self-lookup so a single flat Opportunity report can show this cycle and last cycle side by side without a self-join. Blank when Prior Cycle Grant is empty.</description>
+    <formula>Prior_Cycle_Grant__r.Amount</formula>
+    <label>Prior Cycle Amount</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Currency</type>
+</CustomField>

@@ -41,6 +41,14 @@
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>ESSC Gov Relations Application Access</label>
+    <tabSettings>
+        <tab>standard-Account</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>standard-IndustriesCsvDataimport</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
     <userPermissions>
         <enabled>true</enabled>
         <name>RunFlow</name>

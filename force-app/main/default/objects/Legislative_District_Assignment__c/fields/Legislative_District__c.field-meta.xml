@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Legislative_District__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Legislative District</description>
+    <label>Legislative District</label>
+    <referenceTo>Legislative_District__c</referenceTo>
+    <relationshipLabel>Legislative District Assignments</relationshipLabel>
+    <relationshipName>Legislative_District_Assignments</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

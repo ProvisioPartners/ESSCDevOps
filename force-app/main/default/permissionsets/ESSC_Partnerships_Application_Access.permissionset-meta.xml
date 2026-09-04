@@ -80,6 +80,22 @@
         <field>Ticket__c.User__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <flowAccesses>
+        <enabled>true</enabled>
+        <flow>Log_Interaction</flow>
+    </flowAccesses>
     <hasActivationRequired>false</hasActivationRequired>
     <label>ESSC Partnerships Application Access</label>
+    <tabSettings>
+        <tab>standard-IndustriesCsvDataimport</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
+        <tab>standard-home</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>RunFlow</name>
+    </userPermissions>
 </PermissionSet>
