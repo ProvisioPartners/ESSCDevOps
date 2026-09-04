@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DashboardFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ESSCGovRelationsDashboards</fullName>
+    <folderShares>
+        <accessLevel>EditAllContents</accessLevel>
+        <sharedTo>matt.hernandez@essc.org</sharedTo>
+        <sharedToType>User</sharedToType>
+    </folderShares>
+    <folderShares>
+        <accessLevel>View</accessLevel>
+        <sharedTo>Gov_Relations</sharedTo>
+        <sharedToType>Group</sharedToType>
+    </folderShares>
+    <name>ESSC Gov Relations Dashboards</name>
+</DashboardFolder>

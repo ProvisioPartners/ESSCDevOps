@@ -1,0 +1,2318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>Account</baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Each detail row represents a Gift Transaction record that is directly related to an Account record. Only Gift Transactions with a non-null Donor Id are included in this dataset, even if all filters are removed from a given report. This configuration allows for reporting on Gift Transaction records in the report result details while applying a cross filter that starts from the Account object. Includes fields from Outreach Source Code, Payment Instrument, Matching Employer Transaction, Gift Commitment Schedule, Gift Commitment, Opportunity, Campaign, Donor (Account and Person Account &gt; Contact), Account Owner, and Party Philanthropic Research Profile.</description>
+    <join>
+        <outerJoin>false</outerJoin>
+        <relationship>GiftTransaction</relationship>
+    </join>
+    <label>Gift Transactions Related To Accounts</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AcknowledgementDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AcknowledgementStatus</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CheckDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedBy</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>CurrentAmount</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Description</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>DonorCoverAmount</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IsFullyRefunded</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GatewayReference</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GatewayTransactionFee</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GenerationalCohort</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Id</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>GiftType</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastGatewayErrorMessage</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastGatewayProcessedDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastGatewayResponseCode</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedBy</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>MatchingEmployerTransaction</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>NonTaxDeductibleAmount</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>OriginalAmount</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Owner</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IsPaid</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IsPartiallyRefunded</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>PaymentIdentifier</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>PaymentInstrument</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>PaymentMethod</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ProcessorReference</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ProcessorTransactionFee</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>RefundedAmount</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Status</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>TaxDeductionAmount</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>TaxReceiptStatus</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>TotalTransactionFee</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>TransactionDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>TransactionDueDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IsWrittenOff</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <masterLabel>Gift Transactions</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outreach Source Code: Audience Count</displayNameOverride>
+            <field>OutreachSourceCode.AudienceCount</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outreach Source Code: Audience Information</displayNameOverride>
+            <field>OutreachSourceCode.AudienceInformation</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outreach Source Code: Campaign</displayNameOverride>
+            <field>OutreachSourceCode.Campaign</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outreach Source Code: Created By</displayNameOverride>
+            <field>OutreachSourceCode.CreatedBy</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outreach Source Code: Created Date</displayNameOverride>
+            <field>OutreachSourceCode.CreatedDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outreach Source Code: Description</displayNameOverride>
+            <field>OutreachSourceCode.Description</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outreach Source Code: Last Modified By</displayNameOverride>
+            <field>OutreachSourceCode.LastModifiedBy</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outreach Source Code: Last Modified Date</displayNameOverride>
+            <field>OutreachSourceCode.LastModifiedDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outreach Source Code: Message Channel</displayNameOverride>
+            <field>OutreachSourceCode.MessageChannel</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outreach Source Code: Message Channel Platform</displayNameOverride>
+            <field>OutreachSourceCode.MessageChannelPlatform</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outreach Source Code: Message Channel Platform Account</displayNameOverride>
+            <field>OutreachSourceCode.MessageChannelPlatformAccount</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outreach Source Code: Message Content</displayNameOverride>
+            <field>OutreachSourceCode.MessageContent</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outreach Source Code: Message Title</displayNameOverride>
+            <field>OutreachSourceCode.MessageContentTitle</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outreach Source Code: Name</displayNameOverride>
+            <field>OutreachSourceCode.Name</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outreach Source Code: ID</displayNameOverride>
+            <field>OutreachSourceCode.Id</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outreach Source Code: Owner Name</displayNameOverride>
+            <field>OutreachSourceCode.Owner</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outreach Source Code: Sent Date</displayNameOverride>
+            <field>OutreachSourceCode.SentDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outreach Source Code: Source Code</displayNameOverride>
+            <field>OutreachSourceCode.SourceCode</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outreach Source Code: Source Code Base URL</displayNameOverride>
+            <field>OutreachSourceCode.SourceCodeBaseUrl</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outreach Source Code: Source Code URL</displayNameOverride>
+            <field>OutreachSourceCode.SourceCodeUrl</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outreach Source Code: Status</displayNameOverride>
+            <field>OutreachSourceCode.Status</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Outreach Source Code: Usage Type</displayNameOverride>
+            <field>OutreachSourceCode.UsageType</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <masterLabel>Outreach Source Codes</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Instrument: Account</displayNameOverride>
+            <field>PaymentInstrument.Account</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Instrument: Account Holder Name</displayNameOverride>
+            <field>PaymentInstrument.AccountHolderName</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Instrument: Bank Account Holder Type</displayNameOverride>
+            <field>PaymentInstrument.BankAccountHolderType</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Instrument: Bank Account Number</displayNameOverride>
+            <field>PaymentInstrument.BankAccountNumber</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Instrument: Bank Account Type</displayNameOverride>
+            <field>PaymentInstrument.BankAccountType</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Instrument: Bank Code</displayNameOverride>
+            <field>PaymentInstrument.BankCode</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Instrument: Bank Name</displayNameOverride>
+            <field>PaymentInstrument.BankName</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Instrument: Card Brand</displayNameOverride>
+            <field>PaymentInstrument.CardBrand</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Instrument: Created By</displayNameOverride>
+            <field>PaymentInstrument.CreatedBy</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Instrument: Created Date</displayNameOverride>
+            <field>PaymentInstrument.CreatedDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Instrument: Digital Wallet Provider</displayNameOverride>
+            <field>PaymentInstrument.DigitalWalletProvider</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Instrument: Expiry Month</displayNameOverride>
+            <field>PaymentInstrument.ExpiryMonth</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Instrument: Expiry Year</displayNameOverride>
+            <field>PaymentInstrument.ExpiryYear</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Instrument: Gateway Name</displayNameOverride>
+            <field>PaymentInstrument.GatewayName</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Instrument: Gateway Reference</displayNameOverride>
+            <field>PaymentInstrument.GatewayReference</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Instrument: Last 4</displayNameOverride>
+            <field>PaymentInstrument.Last4</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Instrument: Last Modified By</displayNameOverride>
+            <field>PaymentInstrument.LastModifiedBy</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Instrument: Last Modified Date</displayNameOverride>
+            <field>PaymentInstrument.LastModifiedDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Instrument: Name</displayNameOverride>
+            <field>PaymentInstrument.Name</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Instrument: Owner Name</displayNameOverride>
+            <field>PaymentInstrument.Owner</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Instrument: ID</displayNameOverride>
+            <field>PaymentInstrument.Id</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Instrument: Payment Processor Name</displayNameOverride>
+            <field>PaymentInstrument.PaymentProcessorName</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Instrument: Processor Reference</displayNameOverride>
+            <field>PaymentInstrument.ProcessorReference</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Payment Instrument: Type</displayNameOverride>
+            <field>PaymentInstrument.Type</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <masterLabel>Payment Instruments</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment Schedule: Campaign</displayNameOverride>
+            <field>GiftCommitmentSchedule.Campaign</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment Schedule: Commitment Update Reason</displayNameOverride>
+            <field>GiftCommitmentSchedule.CommitmentUpdateReason</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment Schedule: Created By</displayNameOverride>
+            <field>GiftCommitmentSchedule.CreatedBy</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment Schedule: Created Date</displayNameOverride>
+            <field>GiftCommitmentSchedule.CreatedDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment Schedule: End Date</displayNameOverride>
+            <field>GiftCommitmentSchedule.EndDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment Schedule: Generational Cohort</displayNameOverride>
+            <field>GiftCommitmentSchedule.GenerationalCohort</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment Schedule: Gift Commitment</displayNameOverride>
+            <field>GiftCommitmentSchedule.GiftCommitment</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment Schedule: Gift Commitment Schedule Before Edit</displayNameOverride>
+            <field>GiftCommitmentSchedule.GiftCommitmentSchdBefEdit</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment Schedule: ID</displayNameOverride>
+            <field>GiftCommitmentSchedule.Id</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment Schedule: Last Modified By</displayNameOverride>
+            <field>GiftCommitmentSchedule.LastModifiedBy</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment Schedule: Last Modified Date</displayNameOverride>
+            <field>GiftCommitmentSchedule.LastModifiedDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment Schedule: Name</displayNameOverride>
+            <field>GiftCommitmentSchedule.Name</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment Schedule: Outreach Source Code</displayNameOverride>
+            <field>GiftCommitmentSchedule.OutreachSourceCode</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment Schedule: Payment Instrument</displayNameOverride>
+            <field>GiftCommitmentSchedule.PaymentInstrument</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment Schedule: Payment Method</displayNameOverride>
+            <field>GiftCommitmentSchedule.PaymentMethod</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment Schedule: Processor Reference</displayNameOverride>
+            <field>GiftCommitmentSchedule.ProcessorReference</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment Schedule: Start Date</displayNameOverride>
+            <field>GiftCommitmentSchedule.StartDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment Schedule: Total Schedule Amount</displayNameOverride>
+            <field>GiftCommitmentSchedule.TotalScheduleAmount</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment Schedule: Transaction Amount</displayNameOverride>
+            <field>GiftCommitmentSchedule.TransactionAmount</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment Schedule: Transaction Day</displayNameOverride>
+            <field>GiftCommitmentSchedule.TransactionDay</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment Schedule: Transaction Interval</displayNameOverride>
+            <field>GiftCommitmentSchedule.TransactionInterval</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment Schedule: Transaction Period</displayNameOverride>
+            <field>GiftCommitmentSchedule.TransactionPeriod</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment Schedule: Type</displayNameOverride>
+            <field>GiftCommitmentSchedule.Type</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <masterLabel>Gift Commitment Schedules</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Asset Transfer Expected</displayNameOverride>
+            <field>GiftCommitment.IsAssetTransferExpected</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Campaign</displayNameOverride>
+            <field>GiftCommitment.Campaign</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Created By</displayNameOverride>
+            <field>GiftCommitment.CreatedBy</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Created Date</displayNameOverride>
+            <field>GiftCommitment.CreatedDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Current Gift Commitment Schedule</displayNameOverride>
+            <field>GiftCommitment.CurrentGiftCmtSchedule</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Description</displayNameOverride>
+            <field>GiftCommitment.Description</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Donor</displayNameOverride>
+            <field>GiftCommitment.Donor</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Effective Start Date</displayNameOverride>
+            <field>GiftCommitment.EffectiveStartDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Expected Asset Maturity Date</displayNameOverride>
+            <field>GiftCommitment.ExpectedAssetMaturityDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Expected Asset Transfer Date</displayNameOverride>
+            <field>GiftCommitment.ExpectedAssetTransferDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Expected End Date</displayNameOverride>
+            <field>GiftCommitment.ExpectedEndDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Expected Total Commitment Amount</displayNameOverride>
+            <field>GiftCommitment.ExpectedTotalCmtAmount</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Formal Commitment Type</displayNameOverride>
+            <field>GiftCommitment.FormalCommitmentType</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Fulfillment Type</displayNameOverride>
+            <field>GiftCommitment.FulfillmentType</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: ID</displayNameOverride>
+            <field>GiftCommitment.Id</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Gift Vehicle</displayNameOverride>
+            <field>GiftCommitment.GiftVehicle</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Gift Vehicle Type</displayNameOverride>
+            <field>GiftCommitment.GiftVehicleType</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Last Modified By</displayNameOverride>
+            <field>GiftCommitment.LastModifiedBy</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Last Modified Date</displayNameOverride>
+            <field>GiftCommitment.LastModifiedDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Last Paid Transaction Date</displayNameOverride>
+            <field>GiftCommitment.LastPaidTransactionDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Name</displayNameOverride>
+            <field>GiftCommitment.Name</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Next Transaction Amount</displayNameOverride>
+            <field>GiftCommitment.NextTransactionAmount</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Next Transaction Date</displayNameOverride>
+            <field>GiftCommitment.NextTransactionDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Owner Name</displayNameOverride>
+            <field>GiftCommitment.Owner</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Party Philanthropic Research Profile</displayNameOverride>
+            <field>GiftCommitment.PartyPhilanthropicRsrchPrfl</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Recurrence Type</displayNameOverride>
+            <field>GiftCommitment.RecurrenceType</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Schedule Type</displayNameOverride>
+            <field>GiftCommitment.ScheduleType</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Status</displayNameOverride>
+            <field>GiftCommitment.Status</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Total Asset Present Value</displayNameOverride>
+            <field>GiftCommitment.TotalAssetPresentValue</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Total Commitment Schedule Amount</displayNameOverride>
+            <field>GiftCommitment.TotCommitmentScheduleAmt</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Total Current Month</displayNameOverride>
+            <field>GiftCommitment.TotalCurrentMonth</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Total Current Quarter</displayNameOverride>
+            <field>GiftCommitment.TotalCurrentQuarter</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Total Current Year</displayNameOverride>
+            <field>GiftCommitment.TotalCurrentYear</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Total Expected Asset Maturity Value</displayNameOverride>
+            <field>GiftCommitment.TotExpcAssetMaturityVal</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Total Expected Asset Transfer Value</displayNameOverride>
+            <field>GiftCommitment.TotExpcAssetTransferVal</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Total Next Year</displayNameOverride>
+            <field>GiftCommitment.TotalNextYear</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Total Paid Transaction Amount</displayNameOverride>
+            <field>GiftCommitment.TotalPaidTransactionAmount</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Transaction Payment Count</displayNameOverride>
+            <field>GiftCommitment.TransactionPaymentCount</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Gift Commitment: Written Off Amount</displayNameOverride>
+            <field>GiftCommitment.WrittenOffAmount</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <masterLabel>Gift Commitments</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Name</displayNameOverride>
+            <field>GiftCommitment.Opportunity.Account</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Amount</displayNameOverride>
+            <field>GiftCommitment.Opportunity.Amount</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Close Date</displayNameOverride>
+            <field>GiftCommitment.Opportunity.CloseDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Closed</displayNameOverride>
+            <field>GiftCommitment.Opportunity.IsClosed</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Contact</displayNameOverride>
+            <field>GiftCommitment.Opportunity.Contact</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Contract</displayNameOverride>
+            <field>GiftCommitment.Opportunity.Contract</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Created By</displayNameOverride>
+            <field>GiftCommitment.Opportunity.CreatedBy</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Created Date</displayNameOverride>
+            <field>GiftCommitment.Opportunity.CreatedDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Description</displayNameOverride>
+            <field>GiftCommitment.Opportunity.Description</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Expected Revenue</displayNameOverride>
+            <field>GiftCommitment.Opportunity.ExpectedRevenue</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Forecast Category</displayNameOverride>
+            <field>GiftCommitment.Opportunity.ForecastCategoryName</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Has Line Item</displayNameOverride>
+            <field>GiftCommitment.Opportunity.HasOpportunityLineItem</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Last Activity</displayNameOverride>
+            <field>GiftCommitment.Opportunity.LastActivityDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Last Modified By</displayNameOverride>
+            <field>GiftCommitment.Opportunity.LastModifiedBy</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Last Modified Date</displayNameOverride>
+            <field>GiftCommitment.Opportunity.LastModifiedDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Last Stage Change Date</displayNameOverride>
+            <field>GiftCommitment.Opportunity.LastStageChangeDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Lead Source</displayNameOverride>
+            <field>GiftCommitment.Opportunity.LeadSource</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Next Step</displayNameOverride>
+            <field>GiftCommitment.Opportunity.NextStep</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: ID</displayNameOverride>
+            <field>GiftCommitment.Opportunity.Id</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Name</displayNameOverride>
+            <field>GiftCommitment.Opportunity.Name</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Owner</displayNameOverride>
+            <field>GiftCommitment.Opportunity.Owner</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Price Book</displayNameOverride>
+            <field>GiftCommitment.Opportunity.Pricebook2</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Primary Campaign Source</displayNameOverride>
+            <field>GiftCommitment.Opportunity.Campaign</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Primary Partner Account</displayNameOverride>
+            <field>GiftCommitment.Opportunity.PrimaryPartnerAccount</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Private</displayNameOverride>
+            <field>GiftCommitment.Opportunity.IsPrivate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Probability (%)</displayNameOverride>
+            <field>GiftCommitment.Opportunity.Probability</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Push Count</displayNameOverride>
+            <field>GiftCommitment.Opportunity.PushCount</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Quantity</displayNameOverride>
+            <field>GiftCommitment.Opportunity.TotalOpportunityQuantity</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Stage</displayNameOverride>
+            <field>GiftCommitment.Opportunity.StageName</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Stage Sort Order</displayNameOverride>
+            <field>GiftCommitment.Opportunity.StageSortOrder</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Type</displayNameOverride>
+            <field>GiftCommitment.Opportunity.Type</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Won</displayNameOverride>
+            <field>GiftCommitment.Opportunity.IsWon</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <masterLabel>Opportunities</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Active</displayNameOverride>
+            <field>Campaign.IsActive</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Actual Cost in Campaign</displayNameOverride>
+            <field>Campaign.ActualCost</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Actual Cost in Hierarchy</displayNameOverride>
+            <field>Campaign.HierarchyActualCost</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Budgeted Cost in Campaign</displayNameOverride>
+            <field>Campaign.BudgetedCost</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Budgeted Cost in Hierarchy</displayNameOverride>
+            <field>Campaign.HierarchyBudgetedCost</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: ID</displayNameOverride>
+            <field>Campaign.Id</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Member Type</displayNameOverride>
+            <field>Campaign.CampaignMemberRecordType</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Name</displayNameOverride>
+            <field>Campaign.Name</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Owner</displayNameOverride>
+            <field>Campaign.Owner</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Contacts in Campaign</displayNameOverride>
+            <field>Campaign.NumberOfContacts</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Contacts in Hierarchy</displayNameOverride>
+            <field>Campaign.HierarchyNumberOfContacts</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Converted Leads in Campaign</displayNameOverride>
+            <field>Campaign.NumberOfConvertedLeads</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Converted Leads in Hierarchy</displayNameOverride>
+            <field>Campaign.HierarchyNumberOfConvertedLeads</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Created By</displayNameOverride>
+            <field>Campaign.CreatedBy</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Created Date</displayNameOverride>
+            <field>Campaign.CreatedDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Description</displayNameOverride>
+            <field>Campaign.Description</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: End Date</displayNameOverride>
+            <field>Campaign.EndDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Expected Response (%)</displayNameOverride>
+            <field>Campaign.ExpectedResponse</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Expected Revenue in Campaign</displayNameOverride>
+            <field>Campaign.ExpectedRevenue</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Expected Revenue in Hierarchy</displayNameOverride>
+            <field>Campaign.HierarchyExpectedRevenue</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Last Activity</displayNameOverride>
+            <field>Campaign.LastActivityDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Last Modified By</displayNameOverride>
+            <field>Campaign.LastModifiedBy</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Last Modified Date</displayNameOverride>
+            <field>Campaign.LastModifiedDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Leads in Campaign</displayNameOverride>
+            <field>Campaign.NumberOfLeads</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Leads in Hierarchy</displayNameOverride>
+            <field>Campaign.HierarchyNumberOfLeads</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Num Sent in Campaign</displayNameOverride>
+            <field>Campaign.NumberSent</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Num Sent in Hierarchy</displayNameOverride>
+            <field>Campaign.HierarchyNumberSent</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Opportunities in Campaign</displayNameOverride>
+            <field>Campaign.NumberOfOpportunities</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Opportunities in Hierarchy</displayNameOverride>
+            <field>Campaign.HierarchyNumberOfOpportunities</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Parent Campaign</displayNameOverride>
+            <field>Campaign.Parent</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Responses in Campaign</displayNameOverride>
+            <field>Campaign.NumberOfResponses</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Responses in Hierarchy</displayNameOverride>
+            <field>Campaign.HierarchyNumberOfResponses</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Start Date</displayNameOverride>
+            <field>Campaign.StartDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Status</displayNameOverride>
+            <field>Campaign.Status</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Type</displayNameOverride>
+            <field>Campaign.Type</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Value Opportunities in Campaign</displayNameOverride>
+            <field>Campaign.AmountAllOpportunities</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Value Opportunities in Hierarchy</displayNameOverride>
+            <field>Campaign.HierarchyAmountAllOpportunities</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Value Won Opportunities in Campaign</displayNameOverride>
+            <field>Campaign.AmountWonOpportunities</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Value Won Opportunities in Hierarchy</displayNameOverride>
+            <field>Campaign.HierarchyAmountWonOpportunities</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Won Opportunities in Campaign</displayNameOverride>
+            <field>Campaign.NumberOfWonOpportunities</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Campaign: Won Opportunities in Hierarchy</displayNameOverride>
+            <field>Campaign.HierarchyNumberOfWonOpportunities</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <masterLabel>Campaigns</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Account ID</displayNameOverride>
+            <field>Id</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>My_Portfolio__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Relationship_Manager_Development__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Relationship_Manager_Grants__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Relationship_Manager_Partnerships__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Last_Touch_Date__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Donor: Account Name</displayNameOverride>
+            <field>Name</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Account Number</displayNameOverride>
+            <field>AccountNumber</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Record Type</displayNameOverride>
+            <field>RecordType</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Account Site</displayNameOverride>
+            <field>Site</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Account Source</displayNameOverride>
+            <field>AccountSource</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Annual Revenue</displayNameOverride>
+            <field>AnnualRevenue</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Assistant</displayNameOverride>
+            <field>PersonContact.AssistantName</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Asst. Phone</displayNameOverride>
+            <field>PersonContact.AssistantPhone</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Billing Address</displayNameOverride>
+            <field>BillingAddress</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Billing City</displayNameOverride>
+            <field>BillingCity</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Billing Country</displayNameOverride>
+            <field>BillingCountry</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Billing Geocode Accuracy</displayNameOverride>
+            <field>BillingGeocodeAccuracy</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Billing Latitude</displayNameOverride>
+            <field>BillingLatitude</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Billing Longitude</displayNameOverride>
+            <field>BillingLongitude</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Billing State/Province</displayNameOverride>
+            <field>BillingState</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Billing Street</displayNameOverride>
+            <field>BillingStreet</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Billing Zip/Postal Code</displayNameOverride>
+            <field>BillingPostalCode</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Birthdate</displayNameOverride>
+            <field>PersonContact.Birthdate</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Buyer Attributes</displayNameOverride>
+            <field>PersonContact.BuyerAttributes</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Contact ID</displayNameOverride>
+            <field>PersonContact.Id</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Created By</displayNameOverride>
+            <field>CreatedBy</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Created Date</displayNameOverride>
+            <field>CreatedDate</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Creation Source</displayNameOverride>
+            <field>PersonContact.ContactSource</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Data.com Key</displayNameOverride>
+            <field>Jigsaw</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Department</displayNameOverride>
+            <field>PersonContact.Department</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Department Group</displayNameOverride>
+            <field>PersonContact.DepartmentGroup</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Description</displayNameOverride>
+            <field>Description</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Do Not Call</displayNameOverride>
+            <field>PersonContact.DoNotCall</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Email</displayNameOverride>
+            <field>PersonContact.Email</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Email Bounced Date</displayNameOverride>
+            <field>PersonContact.EmailBouncedDate</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Email Bounced Reason</displayNameOverride>
+            <field>PersonContact.EmailBouncedReason</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Email Opt Out</displayNameOverride>
+            <field>PersonContact.HasOptedOutOfEmail</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Employees</displayNameOverride>
+            <field>NumberOfEmployees</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Fax</displayNameOverride>
+            <field>Fax</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Fax Opt Out</displayNameOverride>
+            <field>PersonContact.HasOptedOutOfFax</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: First Name</displayNameOverride>
+            <field>FirstName</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Full Name</displayNameOverride>
+            <field>PersonContact.Name</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Gender Identity</displayNameOverride>
+            <field>PersonContact.GenderIdentity</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Home Phone</displayNameOverride>
+            <field>PersonContact.HomePhone</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Industry</displayNameOverride>
+            <field>Industry</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Is Email Bounced</displayNameOverride>
+            <field>PersonContact.IsEmailBounced</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Is Person Account</displayNameOverride>
+            <field>PersonContact.IsPersonAccount</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Last Activity</displayNameOverride>
+            <field>LastActivityDate</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Last Modified By</displayNameOverride>
+            <field>LastModifiedBy</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Last Modified Date</displayNameOverride>
+            <field>LastModifiedDate</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Last Name</displayNameOverride>
+            <field>LastName</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Last Stay-in-Touch Request Date</displayNameOverride>
+            <field>PersonContact.LastCURequestDate</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Last Stay-in-Touch Save Date</displayNameOverride>
+            <field>PersonContact.LastCUUpdateDate</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Lead Source</displayNameOverride>
+            <field>PersonContact.LeadSource</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Mailing Address</displayNameOverride>
+            <field>PersonContact.MailingAddress</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Mailing City</displayNameOverride>
+            <field>PersonContact.MailingCity</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Mailing Country</displayNameOverride>
+            <field>PersonContact.MailingCountry</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Mailing Geocode Accuracy</displayNameOverride>
+            <field>PersonContact.MailingGeocodeAccuracy</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Mailing Latitude</displayNameOverride>
+            <field>PersonContact.MailingLatitude</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Mailing Longitude</displayNameOverride>
+            <field>PersonContact.MailingLongitude</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Mailing State/Province</displayNameOverride>
+            <field>PersonContact.MailingState</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Mailing Street</displayNameOverride>
+            <field>PersonContact.MailingStreet</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Mailing Zip/Postal Code</displayNameOverride>
+            <field>PersonContact.MailingPostalCode</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Marital Status</displayNameOverride>
+            <field>PersonContact.MaritalStatus</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Mobile</displayNameOverride>
+            <field>PersonContact.MobilePhone</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Other Address</displayNameOverride>
+            <field>PersonContact.OtherAddress</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Other City</displayNameOverride>
+            <field>PersonContact.OtherCity</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Other Country</displayNameOverride>
+            <field>PersonContact.OtherCountry</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Other Geocode Accuracy</displayNameOverride>
+            <field>PersonContact.OtherGeocodeAccuracy</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Other Latitude</displayNameOverride>
+            <field>PersonContact.OtherLatitude</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Other Longitude</displayNameOverride>
+            <field>PersonContact.OtherLongitude</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Other Phone</displayNameOverride>
+            <field>PersonContact.OtherPhone</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Other State/Province</displayNameOverride>
+            <field>PersonContact.OtherState</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Other Street</displayNameOverride>
+            <field>PersonContact.OtherStreet</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Other Zip/Postal Code</displayNameOverride>
+            <field>PersonContact.OtherPostalCode</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Ownership</displayNameOverride>
+            <field>Ownership</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Parent Account</displayNameOverride>
+            <field>Parent</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Phone</displayNameOverride>
+            <field>Phone</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Pronouns</displayNameOverride>
+            <field>PersonContact.Pronouns</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Rating</displayNameOverride>
+            <field>Rating</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Reports To</displayNameOverride>
+            <field>PersonContact.ReportsTo</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Salutation</displayNameOverride>
+            <field>Salutation</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Seniority Level</displayNameOverride>
+            <field>PersonContact.TitleType</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Shipping Address</displayNameOverride>
+            <field>ShippingAddress</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Shipping City</displayNameOverride>
+            <field>ShippingCity</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Shipping Country</displayNameOverride>
+            <field>ShippingCountry</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Shipping Geocode Accuracy</displayNameOverride>
+            <field>ShippingGeocodeAccuracy</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Shipping Latitude</displayNameOverride>
+            <field>ShippingLatitude</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Shipping Longitude</displayNameOverride>
+            <field>ShippingLongitude</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Shipping State/Province</displayNameOverride>
+            <field>ShippingState</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Shipping Street</displayNameOverride>
+            <field>ShippingStreet</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Shipping Zip/Postal Code</displayNameOverride>
+            <field>ShippingPostalCode</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: SIC Code</displayNameOverride>
+            <field>Sic</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: SIC Description</displayNameOverride>
+            <field>SicDesc</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Source System ID</displayNameOverride>
+            <field>SourceSystemIdentifier</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Ticker Symbol</displayNameOverride>
+            <field>TickerSymbol</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Title</displayNameOverride>
+            <field>PersonContact.Title</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Type</displayNameOverride>
+            <field>Type</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Website</displayNameOverride>
+            <field>Website</field>
+            <table>Account</table>
+        </columns>
+        <masterLabel>Donors</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: About Me</displayNameOverride>
+            <field>Owner.AboutMe</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Active</displayNameOverride>
+            <field>Owner.IsActive</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Address</displayNameOverride>
+            <field>Owner.Address</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Alias</displayNameOverride>
+            <field>Owner.Alias</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: City</displayNameOverride>
+            <field>Owner.City</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Company Name</displayNameOverride>
+            <field>Owner.CompanyName</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Country</displayNameOverride>
+            <field>Owner.Country</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Created By</displayNameOverride>
+            <field>Owner.CreatedBy</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Created Date</displayNameOverride>
+            <field>Owner.CreatedDate</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Department</displayNameOverride>
+            <field>Owner.Department</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Division</displayNameOverride>
+            <field>Owner.Division</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Email</displayNameOverride>
+            <field>Owner.Email</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Employee Number</displayNameOverride>
+            <field>Owner.EmployeeNumber</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: End of Day</displayNameOverride>
+            <field>Owner.EndDay</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Extension</displayNameOverride>
+            <field>Owner.Extension</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Fax</displayNameOverride>
+            <field>Owner.Fax</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: First Name</displayNameOverride>
+            <field>Owner.FirstName</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Full Name</displayNameOverride>
+            <field>Owner.Name</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Language</displayNameOverride>
+            <field>Owner.LanguageLocaleKey</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Last Login</displayNameOverride>
+            <field>Owner.LastLoginDate</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Last Modified By</displayNameOverride>
+            <field>Owner.LastModifiedBy</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Last Modified Date</displayNameOverride>
+            <field>Owner.LastModifiedDate</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Last Name</displayNameOverride>
+            <field>Owner.LastName</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Latitude</displayNameOverride>
+            <field>Owner.Latitude</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Locale</displayNameOverride>
+            <field>Owner.LocaleSidKey</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Longitude</displayNameOverride>
+            <field>Owner.Longitude</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Manager</displayNameOverride>
+            <field>Owner.Manager</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Mobile</displayNameOverride>
+            <field>Owner.MobilePhone</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Nickname</displayNameOverride>
+            <field>Owner.CommunityNickname</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Phone</displayNameOverride>
+            <field>Owner.Phone</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Profile</displayNameOverride>
+            <field>Owner.Profile</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Role</displayNameOverride>
+            <field>Owner.UserRole</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: SAML Federation ID</displayNameOverride>
+            <field>Owner.FederationIdentifier</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Start of Day</displayNameOverride>
+            <field>Owner.StartDay</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: State/Province</displayNameOverride>
+            <field>Owner.State</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Street</displayNameOverride>
+            <field>Owner.Street</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Time Zone</displayNameOverride>
+            <field>Owner.TimeZoneSidKey</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Title</displayNameOverride>
+            <field>Owner.Title</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: User ID</displayNameOverride>
+            <field>Owner.Id</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Username</displayNameOverride>
+            <field>Owner.Username</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: User Type</displayNameOverride>
+            <field>Owner.UserType</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Account Owner: Zip/Postal Code</displayNameOverride>
+            <field>Owner.PostalCode</field>
+            <table>Account</table>
+        </columns>
+        <masterLabel>Account Owners</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Party Philanthropic Research Profile: Account</displayNameOverride>
+            <field>PartyPhilanthropicRsrchPrfl.Account</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Party Philanthropic Research Profile: Case</displayNameOverride>
+            <field>PartyPhilanthropicRsrchPrfl.Case</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Party Philanthropic Research Profile: Contact</displayNameOverride>
+            <field>PartyPhilanthropicRsrchPrfl.Contact</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Party Philanthropic Research Profile: Created By</displayNameOverride>
+            <field>PartyPhilanthropicRsrchPrfl.CreatedBy</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Party Philanthropic Research Profile: Created Date</displayNameOverride>
+            <field>PartyPhilanthropicRsrchPrfl.CreatedDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Party Philanthropic Research Profile: Detailed Summary</displayNameOverride>
+            <field>PartyPhilanthropicRsrchPrfl.DetailedSummary</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Party Philanthropic Research Profile: End Date</displayNameOverride>
+            <field>PartyPhilanthropicRsrchPrfl.EndDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Party Philanthropic Research Profile: Hours Spent on Research</displayNameOverride>
+            <field>PartyPhilanthropicRsrchPrfl.HoursSpentOnResearch</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Party Philanthropic Research Profile: Is Research Completed</displayNameOverride>
+            <field>PartyPhilanthropicRsrchPrfl.IsResearchCompleted</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Party Philanthropic Research Profile: Last Modified By</displayNameOverride>
+            <field>PartyPhilanthropicRsrchPrfl.LastModifiedBy</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Party Philanthropic Research Profile: Last Modified Date</displayNameOverride>
+            <field>PartyPhilanthropicRsrchPrfl.LastModifiedDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Party Philanthropic Research Profile: Owner Name</displayNameOverride>
+            <field>PartyPhilanthropicRsrchPrfl.Owner</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Party Philanthropic Research Profile: ID</displayNameOverride>
+            <field>PartyPhilanthropicRsrchPrfl.Id</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Party Philanthropic Research Profile: Name</displayNameOverride>
+            <field>PartyPhilanthropicRsrchPrfl.Name</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Party Philanthropic Research Profile: Percentage of Research Completed</displayNameOverride>
+            <field>PartyPhilanthropicRsrchPrfl.PctOfResearchCompleted</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Party Philanthropic Research Profile: Researcher Assigned</displayNameOverride>
+            <field>PartyPhilanthropicRsrchPrfl.ResearcherAssigned</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Party Philanthropic Research Profile: Research Profile Phase</displayNameOverride>
+            <field>PartyPhilanthropicRsrchPrfl.ResearchProfilePhase</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Party Philanthropic Research Profile: Research Profile Type</displayNameOverride>
+            <field>PartyPhilanthropicRsrchPrfl.ResearchProfileType</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Party Philanthropic Research Profile: Short Summary</displayNameOverride>
+            <field>PartyPhilanthropicRsrchPrfl.ShortSummary</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Party Philanthropic Research Profile: Start Date</displayNameOverride>
+            <field>PartyPhilanthropicRsrchPrfl.StartDate</field>
+            <table>Account.GiftTransaction</table>
+        </columns>
+        <masterLabel>Party Philanthropic Research Profiles</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Is_My_Dev_RM_Account__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Partnership_Engagement_Status__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Legacy_ID__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Age__c</field>
+            <table>Account</table>
+        </columns>
+        <masterLabel>Accounts</masterLabel>
+    </sections>
+</ReportType>

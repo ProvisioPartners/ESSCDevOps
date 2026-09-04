@@ -1,0 +1,1373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>Opportunity</baseObject>
+    <category>opportunities</category>
+    <deployed>true</deployed>
+    <description>Each detail row represents a Gift Default Designation record that is directly related to an Opportunity record. Only Gift Default Designations with a non-null Opportunity Id are included in this dataset, even if all filters are removed from a given report. This configuration allows for reporting on Gift Default Designation records in the report result details while referencing fields from the Opportunity object (which is related via a polymorphic relationship field) and/or its ancestors. Includes fields from Gift Designation, Opportunity, Campaign, Donor (Account and Person Account &gt; Contact), and Account Owner.</description>
+    <join>
+        <outerJoin>false</outerJoin>
+        <relationship>GiftDefaultDesignation</relationship>
+    </join>
+    <label>Gift Default Designations Related To Opportunities</label>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AllocatedPercentage</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedBy</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedDate</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Id</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedBy</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedDate</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <masterLabel>Gift Default Designations</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GiftDesignation.IsActive</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GiftDesignation.AverageTransactionAmount</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GiftDesignation.CreatedBy</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GiftDesignation.CreatedDate</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GiftDesignation.CurrentYearTrxnAmount</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GiftDesignation.CurrentYearTransactionCount</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GiftDesignation.IsDefault</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GiftDesignation.Description</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GiftDesignation.FirstPaidTransactionDate</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GiftDesignation.Id</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GiftDesignation.HighestTransactionAmount</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GiftDesignation.LastModifiedBy</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GiftDesignation.LastModifiedDate</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GiftDesignation.LastPaidTransactionDate</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GiftDesignation.LastTwoYearTrxnAmount</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GiftDesignation.LastTwoYearTrxnCount</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GiftDesignation.LastYearTrxnAmount</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GiftDesignation.LastYearTransactionCount</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GiftDesignation.LowestTransactionAmount</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GiftDesignation.Name</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GiftDesignation.Owner</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GiftDesignation.TotalTransactionAmount</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GiftDesignation.TotalTransactionCount</field>
+            <table>Opportunity.GiftDefaultDesignation</table>
+        </columns>
+        <masterLabel>Gift Designations</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Account</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Amount</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CloseDate</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IsClosed</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contact</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Contract</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedBy</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedDate</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Description</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ExpectedRevenue</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ForecastCategoryName</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>HasOpportunityLineItem</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastActivityDate</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedBy</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedDate</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastStageChangeDate</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LeadSource</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>NextStep</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Id</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Owner</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Pricebook2</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>PrimaryPartnerAccount</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IsPrivate</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Probability</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>PushCount</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>TotalOpportunityQuantity</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>StageName</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>StageSortOrder</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Type</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IsWon</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Service_Line_Lead__c</field>
+            <table>Opportunity</table>
+        </columns>
+        <masterLabel>Opportunities</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.IsActive</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.ActualCost</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.HierarchyActualCost</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.BudgetedCost</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.HierarchyBudgetedCost</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.Id</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.CampaignMemberRecordType</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Campaign.Name</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.Owner</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.NumberOfContacts</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.HierarchyNumberOfContacts</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.NumberOfConvertedLeads</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.HierarchyNumberOfConvertedLeads</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.CreatedBy</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.CreatedDate</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.Description</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.EndDate</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.ExpectedResponse</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.ExpectedRevenue</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.HierarchyExpectedRevenue</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.LastActivityDate</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.LastModifiedBy</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.LastModifiedDate</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.NumberOfLeads</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.HierarchyNumberOfLeads</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.NumberSent</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.HierarchyNumberSent</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.NumberOfOpportunities</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.HierarchyNumberOfOpportunities</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.Parent</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.NumberOfResponses</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.HierarchyNumberOfResponses</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.StartDate</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.Status</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.Type</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.AmountAllOpportunities</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.HierarchyAmountAllOpportunities</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.AmountWonOpportunities</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.HierarchyAmountWonOpportunities</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.NumberOfWonOpportunities</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign.HierarchyNumberOfWonOpportunities</field>
+            <table>Opportunity</table>
+        </columns>
+        <masterLabel>Campaigns</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Account ID</displayNameOverride>
+            <field>Account.Id</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <displayNameOverride>Donor: Account Name</displayNameOverride>
+            <field>Account.Name</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Account Number</displayNameOverride>
+            <field>Account.AccountNumber</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Account Record Type</displayNameOverride>
+            <field>Account.RecordType</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Account Site</displayNameOverride>
+            <field>Account.Site</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Account Source</displayNameOverride>
+            <field>Account.AccountSource</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Annual Revenue</displayNameOverride>
+            <field>Account.AnnualRevenue</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Assistant</displayNameOverride>
+            <field>Account.PersonContact.AssistantName</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Asst. Phone</displayNameOverride>
+            <field>Account.PersonContact.AssistantPhone</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Billing Address</displayNameOverride>
+            <field>Account.BillingAddress</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Billing City</displayNameOverride>
+            <field>Account.BillingCity</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Billing Country</displayNameOverride>
+            <field>Account.BillingCountry</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Billing Geocode Accuracy</displayNameOverride>
+            <field>Account.BillingGeocodeAccuracy</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Billing Latitude</displayNameOverride>
+            <field>Account.BillingLatitude</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Billing Longitude</displayNameOverride>
+            <field>Account.BillingLongitude</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Billing State/Province</displayNameOverride>
+            <field>Account.BillingState</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Billing Street</displayNameOverride>
+            <field>Account.BillingStreet</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Billing Zip/Postal Code</displayNameOverride>
+            <field>Account.BillingPostalCode</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Birthdate</displayNameOverride>
+            <field>Account.PersonContact.Birthdate</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Buyer Attributes</displayNameOverride>
+            <field>Account.PersonContact.BuyerAttributes</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Contact ID</displayNameOverride>
+            <field>Account.PersonContact.Id</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Created By</displayNameOverride>
+            <field>Account.CreatedBy</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Created Date</displayNameOverride>
+            <field>Account.CreatedDate</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Creation Source</displayNameOverride>
+            <field>Account.PersonContact.ContactSource</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Data.com Key</displayNameOverride>
+            <field>Account.Jigsaw</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Department</displayNameOverride>
+            <field>Account.PersonContact.Department</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Department Group</displayNameOverride>
+            <field>Account.PersonContact.DepartmentGroup</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Description</displayNameOverride>
+            <field>Account.Description</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Do Not Call</displayNameOverride>
+            <field>Account.PersonContact.DoNotCall</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Email</displayNameOverride>
+            <field>Account.PersonContact.Email</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Email Bounced Date</displayNameOverride>
+            <field>Account.PersonContact.EmailBouncedDate</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Email Bounced Reason</displayNameOverride>
+            <field>Account.PersonContact.EmailBouncedReason</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Email Opt Out</displayNameOverride>
+            <field>Account.PersonContact.HasOptedOutOfEmail</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Employees</displayNameOverride>
+            <field>Account.NumberOfEmployees</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Fax</displayNameOverride>
+            <field>Account.Fax</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Fax Opt Out</displayNameOverride>
+            <field>Account.PersonContact.HasOptedOutOfFax</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: First Name</displayNameOverride>
+            <field>Account.FirstName</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Full Name</displayNameOverride>
+            <field>Account.PersonContact.Name</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Gender Identity</displayNameOverride>
+            <field>Account.PersonContact.GenderIdentity</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Home Phone</displayNameOverride>
+            <field>Account.PersonContact.HomePhone</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Individual</displayNameOverride>
+            <field>Account.PersonContact.Individual</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Industry</displayNameOverride>
+            <field>Account.Industry</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Is Email Bounced</displayNameOverride>
+            <field>Account.PersonContact.IsEmailBounced</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Is Person Account</displayNameOverride>
+            <field>Account.PersonContact.IsPersonAccount</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Last Activity</displayNameOverride>
+            <field>Account.LastActivityDate</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Last Modified By</displayNameOverride>
+            <field>Account.LastModifiedBy</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Last Modified Date</displayNameOverride>
+            <field>Account.LastModifiedDate</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Last Name</displayNameOverride>
+            <field>Account.LastName</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Last Stay-in-Touch Request Date</displayNameOverride>
+            <field>Account.PersonContact.LastCURequestDate</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Last Stay-in-Touch Save Date</displayNameOverride>
+            <field>Account.PersonContact.LastCUUpdateDate</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Lead Source</displayNameOverride>
+            <field>Account.PersonContact.LeadSource</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Mailing Address</displayNameOverride>
+            <field>Account.PersonContact.MailingAddress</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Mailing City</displayNameOverride>
+            <field>Account.PersonContact.MailingCity</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Mailing Country</displayNameOverride>
+            <field>Account.PersonContact.MailingCountry</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Mailing Geocode Accuracy</displayNameOverride>
+            <field>Account.PersonContact.MailingGeocodeAccuracy</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Mailing Latitude</displayNameOverride>
+            <field>Account.PersonContact.MailingLatitude</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Mailing Longitude</displayNameOverride>
+            <field>Account.PersonContact.MailingLongitude</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Mailing State/Province</displayNameOverride>
+            <field>Account.PersonContact.MailingState</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Mailing Street</displayNameOverride>
+            <field>Account.PersonContact.MailingStreet</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Mailing Zip/Postal Code</displayNameOverride>
+            <field>Account.PersonContact.MailingPostalCode</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Marital Status</displayNameOverride>
+            <field>Account.PersonContact.MaritalStatus</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Mobile</displayNameOverride>
+            <field>Account.PersonContact.MobilePhone</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Other Address</displayNameOverride>
+            <field>Account.PersonContact.OtherAddress</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Other City</displayNameOverride>
+            <field>Account.PersonContact.OtherCity</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Other Country</displayNameOverride>
+            <field>Account.PersonContact.OtherCountry</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Other Geocode Accuracy</displayNameOverride>
+            <field>Account.PersonContact.OtherGeocodeAccuracy</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Other Latitude</displayNameOverride>
+            <field>Account.PersonContact.OtherLatitude</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Other Longitude</displayNameOverride>
+            <field>Account.PersonContact.OtherLongitude</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Other Phone</displayNameOverride>
+            <field>Account.PersonContact.OtherPhone</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Other State/Province</displayNameOverride>
+            <field>Account.PersonContact.OtherState</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Other Street</displayNameOverride>
+            <field>Account.PersonContact.OtherStreet</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Other Zip/Postal Code</displayNameOverride>
+            <field>Account.PersonContact.OtherPostalCode</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Ownership</displayNameOverride>
+            <field>Account.Ownership</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Parent Account</displayNameOverride>
+            <field>Account.Parent</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Phone</displayNameOverride>
+            <field>Account.Phone</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Pronouns</displayNameOverride>
+            <field>Account.PersonContact.Pronouns</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Rating</displayNameOverride>
+            <field>Account.Rating</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Reports To</displayNameOverride>
+            <field>Account.PersonContact.ReportsTo</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Salutation</displayNameOverride>
+            <field>Account.Salutation</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Seniority Level</displayNameOverride>
+            <field>Account.PersonContact.TitleType</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Shipping Address</displayNameOverride>
+            <field>Account.ShippingAddress</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Shipping City</displayNameOverride>
+            <field>Account.ShippingCity</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Shipping Country</displayNameOverride>
+            <field>Account.ShippingCountry</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Shipping Geocode Accuracy</displayNameOverride>
+            <field>Account.ShippingGeocodeAccuracy</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Shipping Latitude</displayNameOverride>
+            <field>Account.ShippingLatitude</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Shipping Longitude</displayNameOverride>
+            <field>Account.ShippingLongitude</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Shipping State/Province</displayNameOverride>
+            <field>Account.ShippingState</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Shipping Street</displayNameOverride>
+            <field>Account.ShippingStreet</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Shipping Zip/Postal Code</displayNameOverride>
+            <field>Account.ShippingPostalCode</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: SIC Code</displayNameOverride>
+            <field>Account.Sic</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: SIC Description</displayNameOverride>
+            <field>Account.SicDesc</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Source System ID</displayNameOverride>
+            <field>Account.SourceSystemIdentifier</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Ticker Symbol</displayNameOverride>
+            <field>Account.TickerSymbol</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Title</displayNameOverride>
+            <field>Account.PersonContact.Title</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Type</displayNameOverride>
+            <field>Account.Type</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Donor: Website</displayNameOverride>
+            <field>Account.Website</field>
+            <table>Opportunity</table>
+        </columns>
+        <masterLabel>Donors</masterLabel>
+    </sections>
+    <sections>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: About Me</displayNameOverride>
+            <field>Account.Owner.AboutMe</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Active</displayNameOverride>
+            <field>Account.Owner.IsActive</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Address</displayNameOverride>
+            <field>Account.Owner.Address</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Alias</displayNameOverride>
+            <field>Account.Owner.Alias</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: City</displayNameOverride>
+            <field>Account.Owner.City</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Company Name</displayNameOverride>
+            <field>Account.Owner.CompanyName</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Country</displayNameOverride>
+            <field>Account.Owner.Country</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Created By</displayNameOverride>
+            <field>Account.Owner.CreatedBy</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Created Date</displayNameOverride>
+            <field>Account.Owner.CreatedDate</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Department</displayNameOverride>
+            <field>Account.Owner.Department</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Division</displayNameOverride>
+            <field>Account.Owner.Division</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Email</displayNameOverride>
+            <field>Account.Owner.Email</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Employee Number</displayNameOverride>
+            <field>Account.Owner.EmployeeNumber</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: End of Day</displayNameOverride>
+            <field>Account.Owner.EndDay</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Extension</displayNameOverride>
+            <field>Account.Owner.Extension</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Fax</displayNameOverride>
+            <field>Account.Owner.Fax</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: First Name</displayNameOverride>
+            <field>Account.Owner.FirstName</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Full Name</displayNameOverride>
+            <field>Account.Owner.Name</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Language</displayNameOverride>
+            <field>Account.Owner.LanguageLocaleKey</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Last Login</displayNameOverride>
+            <field>Account.Owner.LastLoginDate</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Last Modified By</displayNameOverride>
+            <field>Account.Owner.LastModifiedBy</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Last Modified Date</displayNameOverride>
+            <field>Account.Owner.LastModifiedDate</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Last Name</displayNameOverride>
+            <field>Account.Owner.LastName</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Latitude</displayNameOverride>
+            <field>Account.Owner.Latitude</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Locale</displayNameOverride>
+            <field>Account.Owner.LocaleSidKey</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Longitude</displayNameOverride>
+            <field>Account.Owner.Longitude</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Manager</displayNameOverride>
+            <field>Account.Owner.Manager</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Mobile</displayNameOverride>
+            <field>Account.Owner.MobilePhone</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Nickname</displayNameOverride>
+            <field>Account.Owner.CommunityNickname</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Phone</displayNameOverride>
+            <field>Account.Owner.Phone</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Profile</displayNameOverride>
+            <field>Account.Owner.Profile</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Role</displayNameOverride>
+            <field>Account.Owner.UserRole</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: SAML Federation ID</displayNameOverride>
+            <field>Account.Owner.FederationIdentifier</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Start of Day</displayNameOverride>
+            <field>Account.Owner.StartDay</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: State/Province</displayNameOverride>
+            <field>Account.Owner.State</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Street</displayNameOverride>
+            <field>Account.Owner.Street</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Time Zone</displayNameOverride>
+            <field>Account.Owner.TimeZoneSidKey</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Title</displayNameOverride>
+            <field>Account.Owner.Title</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: User ID</displayNameOverride>
+            <field>Account.Owner.Id</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: User Type</displayNameOverride>
+            <field>Account.Owner.UserType</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Username</displayNameOverride>
+            <field>Account.Owner.Username</field>
+            <table>Opportunity</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <displayNameOverride>Opportunity: Account Owner: Zip/Postal Code</displayNameOverride>
+            <field>Account.Owner.PostalCode</field>
+            <table>Opportunity</table>
+        </columns>
+        <masterLabel>Account Owners</masterLabel>
+    </sections>
+</ReportType>

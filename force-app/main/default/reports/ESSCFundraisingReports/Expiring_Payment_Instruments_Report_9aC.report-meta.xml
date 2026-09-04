@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>PaymentInstrument$Name</field>
+    </columns>
+    <columns>
+        <field>PaymentInstrument$ExpiryMonth</field>
+    </columns>
+    <columns>
+        <field>PaymentInstrument$ExpiryYear</field>
+    </columns>
+    <columns>
+        <field>PaymentInstrument$Account</field>
+    </columns>
+    <description>Expiring Payment Instruments Report - Payment Instruments that expire in the next 30 days</description>
+    <filter>
+        <criteriaItems>
+            <column>PaymentInstrument$ExpiryYear</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>THIS YEAR</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PaymentInstrument$ExpiryMonth</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>THIS MONTH</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Expiring Payment Instruments Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Payment_Instruments__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>PaymentInstrument$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>InteractionSummary$Name</field>
+    </columns>
+    <columns>
+        <field>InteractionSummary$Interaction.StartTime</field>
+    </columns>
+    <columns>
+        <field>InteractionSummary$Account.Issue_Area__c</field>
+    </columns>
+    <columns>
+        <field>InteractionSummary$Account.Legislative_District__c</field>
+    </columns>
+    <description>Interaction summaries grouped by type. Filter by issue area and district.</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>InteractionSummary$Interaction.InteractionType</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>InteractionSummary$Account.Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Interaction Summaries by District</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Interaction_Summaries__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>InteractionSummary$Interaction.StartTime</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>InteractionSummary$Interaction.StartTime</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

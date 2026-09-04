@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>GiftTransactionDesignation</baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Gift Transaction Designation lines (one row per GL posting line) with donor, gift date, payment method, fund, revenue code, cost center, payout date, line amount and full payment total surfaced onto the line. Source for the Monthly Payments for Accounting export.</description>
+    <label>Gift Payments for Accounting</label>
+    <sections>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Gift_Date__c</field>
+            <table>GiftTransactionDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Donor_Name__c</field>
+            <table>GiftTransactionDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Payment_Method__c</field>
+            <table>GiftTransactionDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Fund_Designation__c</field>
+            <table>GiftTransactionDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>GL_Revenue_Code__c</field>
+            <table>GiftTransactionDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>GL_Cost_Center__c</field>
+            <table>GiftTransactionDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Amount</field>
+            <table>GiftTransactionDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Payment_Amount_Total__c</field>
+            <table>GiftTransactionDesignation</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>GL_Payout_Date__c</field>
+            <table>GiftTransactionDesignation</table>
+        </columns>
+        <masterLabel>Gift Payment Lines</masterLabel>
+    </sections>
+</ReportType>

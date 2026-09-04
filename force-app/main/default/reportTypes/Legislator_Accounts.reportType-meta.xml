@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>Committee_Assignment__c</baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Committee assignments with Issue Area from Committee and district from the legislator account.</description>
+    <label>Legislators with Committee Assignments</label>
+    <sections>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Account__c</field>
+            <table>Committee_Assignment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Account__c.Legislator__c</field>
+            <table>Committee_Assignment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Account__c.Legislative_District__c</field>
+            <table>Committee_Assignment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Account__c.Government_Level__c</field>
+            <table>Committee_Assignment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Committee__c</field>
+            <table>Committee_Assignment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Committee__c.Issue_Area__c</field>
+            <table>Committee_Assignment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Role__c</field>
+            <table>Committee_Assignment__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Status__c</field>
+            <table>Committee_Assignment__c</table>
+        </columns>
+        <masterLabel>Committee Assignments</masterLabel>
+    </sections>
+</ReportType>

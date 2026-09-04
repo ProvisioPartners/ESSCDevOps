@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>GiftTransactionDesignation$GiftTransaction.TransactionDate</field>
+    </columns>
+    <columns>
+        <field>GiftTransactionDesignation$GiftTransaction.Name</field>
+    </columns>
+    <columns>
+        <field>GiftTransactionDesignation$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>GiftTransactionDesignation$Amount</field>
+    </columns>
+    <columns>
+        <field>GiftTransactionDesignation$GiftTransaction.PaymentMethod</field>
+    </columns>
+    <columns>
+        <field>GiftTransactionDesignation$GiftTransaction.Status</field>
+    </columns>
+    <columns>
+        <field>GiftTransactionDesignation$GiftTransaction.GiftType</field>
+    </columns>
+    <columns>
+        <field>GiftTransactionDesignation$GiftDesignation.Name</field>
+    </columns>
+    <description>How is each payment allocated to fund(s)? A list of Gift Transaction Designations.</description>
+    <format>Tabular</format>
+    <name>All Payment Fund Allocations</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Gift_Transaction_Designations_Deluxe__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>GiftTransactionDesignation$GiftTransaction.TransactionDate</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>GiftTransactionDesignation$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

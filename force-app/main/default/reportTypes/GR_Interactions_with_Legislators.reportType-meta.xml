@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <baseObject>Interaction</baseObject>
+    <category>other</category>
+    <deployed>true</deployed>
+    <description>Government Relations interactions logged via the Log Interaction flow. Used to count outreach emails sent (Interaction Type = Email) and meetings completed (Interaction Type = In Person) and to trend meetings over time. Interaction is a standard object that does not expose its parent Account&apos;s custom fields to custom report types, so government-level/district filtering is provided by the Account- and Activity-based reports instead.</description>
+    <label>GR Interactions</label>
+    <sections>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>Name</field>
+            <table>Interaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>InteractionType</field>
+            <table>Interaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>StartTime</field>
+            <table>Interaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>true</checkedByDefault>
+            <field>EndTime</field>
+            <table>Interaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Description</field>
+            <table>Interaction</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Campaign__c</field>
+            <table>Interaction</table>
+        </columns>
+        <masterLabel>Interactions</masterLabel>
+    </sections>
+</ReportType>
